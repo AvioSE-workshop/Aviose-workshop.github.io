@@ -173,7 +173,7 @@ textarea {
     text-align: center;
     margin-top: 0em;
     font-weight: 800;
-    line-height: 0.5;
+    line-height: normal;
     color:darkslateblue;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 28px;
