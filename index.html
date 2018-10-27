@@ -161,14 +161,23 @@
     ------------------------- */
 
     .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+      margin: 40px 0; /* Space out the Bootstrap <hr> more */
     }
     .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
+        padding-left: 110px;
+        padding-right: 110px;
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
     }
     .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+        padding: 5px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        margin-top: -10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
     }
 
     /* Give some space on the sides of the floated elements so text doesn't run right into it. */
@@ -181,10 +190,31 @@
 
     /* Thin out the marketing headings */
     .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
+        text-align:left;
+        margin-top: 0em;
+        font-weight: 800;
+        line-height: 1;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: darkslateblue;
+        letter-spacing: -1px;
+        font-size: 24px;
+        max-width: 1000px;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0.5em 1em 1em;
+    }
+
+    .featurette-lead {
+        text-align:left;
+        margin-top: 0em;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #545454;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0.5em 2em 2em;
     }
 
 
@@ -212,15 +242,15 @@
       }
 
       .featurette {
-        height: auto;
+        height:auto;
         padding: 0;
       }
       .featurette-image.pull-left,
       .featurette-image.pull-right {
-        display: block;
+        display:block;
         float: none;
         max-width: 40%;
-        margin: 0 auto 20px;
+        margin: 0px auto 20px;
       }
     }
 
@@ -260,15 +290,6 @@
       .marketing .span4 + .span4 {
         margin-top: 40px;
       }
-
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-
     }
     </style>
 
@@ -409,13 +430,24 @@
 
       <hr class="featurette-divider">
 
-      <div id="u22">
-        Über den Workshop
-            </div>
+       <!-- START THE FEATURETTES       -->
 
-      <div id="u3">
-        Die Software-Entwicklung in der Luft- und Raumfahrt ist durch zunehmende Komplexität, neue Anwendungsmöglichkeiten und gestiegene Zulassungsanforderungen gekennzeichnet. Zukünftige Anwendungen wie autonomer Lufttransport und Drohneneinsatz im kommerziellen Segment sowie die Weiterentwicklung bestehender Funktionalitäten erfordern neue Entwicklungsmethoden. Gleichzeitig existieren Fragestellungen z. B. in der Kommunikation und Navigation im Luftraum, der Technologie von Mehrkernprozessoren oder der künstlichen Intelligenz.
-            </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="../assets/img/examples/ueber_workshop.png">
+        <h2 class="featurette-heading">Über den Workshop </h2>
+        <p class="featurette-lead">Die Software-Entwicklung in der Luft- und Raumfahrt ist durch zunehmende Komplexität, neue Anwendungsmöglichkeiten und gestiegene Zulassungsanforderungen gekennzeichnet. Zukünftige Anwendungen wie autonomer Lufttransport und Drohneneinsatz im kommerziellen Segment sowie die Weiterentwicklung bestehender Funktionalitäten erfordern neue Entwicklungsmethoden. Gleichzeitig existieren Fragestellungen z. B. in der Kommunikation und Navigation im Luftraum, der Technologie von Mehrkernprozessoren oder der künstlichen Intelligenz.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="../assets/img/examples/wichtige_termine.png">
+        <h2 class="featurette-heading">Wichtige Termine </h2>
+        <p class="featurette-lead">14.12.2018 Einreichungsfrist für Workshop-Beiträge</p>
+          <p class="featurette-lead">25.01.2019 Benachrichtigung für Workshop-Beiträge</p>
+      </div>
 
       <hr class="featurette-divider">
 
@@ -447,37 +479,6 @@
       </div>
 
 
-
-
-      <!-- START THE FEATURETTES
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      -->
 
         <!-- Footer
     ================================================== -->
