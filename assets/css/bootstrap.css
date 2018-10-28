@@ -273,6 +273,19 @@ textarea {
     padding: 0.5em 2em 2em;
 }
 
+#u4 {
+    text-align: left;
+    margin-top: 0em;
+    font-weight: 600;
+    line-height: 1.0;
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0em 2em 2em;
+}
+
 #news {
     font-size: 18px;
     margin: 0 auto;
@@ -324,6 +337,14 @@ textarea {
     margin: 0 auto;
     width: 60%;
     padding: 1em 1em 3em;
+
+}
+
+#engeauswahl {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 60%;
+    padding: 0em 1em 3em;
 
 }
 
