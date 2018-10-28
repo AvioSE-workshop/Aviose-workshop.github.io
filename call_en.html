@@ -127,10 +127,10 @@
       max-width: 550px;
       padding: 0 20px;
       margin-top: 200px;
-        margin-left: 10px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
+      margin: 0;
       line-height: 1.25;
       color:darkslateblue;
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
@@ -161,23 +161,14 @@
     ------------------------- */
 
     .featurette-divider {
-      margin: 40px 0; /* Space out the Bootstrap <hr> more */
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
     }
     .featurette {
-      padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
-        padding-left: 110px;
-        padding-right: 110px;
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
     }
     .featurette-image {
-        padding: 5px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        margin-top: -10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
     }
 
     /* Give some space on the sides of the floated elements so text doesn't run right into it. */
@@ -190,31 +181,10 @@
 
     /* Thin out the marketing headings */
     .featurette-heading {
-        text-align:left;
-        margin-top: 0em;
-        font-weight: 800;
-        line-height: 1;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: darkslateblue;
-        letter-spacing: -1px;
-        font-size: 24px;
-        max-width: 1000px;
-        margin: 0 auto;
-        max-width: 1000px;
-        padding: 0.5em 1em 1em;
-    }
-
-    .featurette-lead {
-        text-align:left;
-        margin-top: 0em;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #545454;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 18px;
-        margin: 0 auto;
-        max-width: 1000px;
-        padding: 0.5em 2em 2em;
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
     }
 
 
@@ -242,15 +212,15 @@
       }
 
       .featurette {
-        height:auto;
+        height: auto;
         padding: 0;
       }
       .featurette-image.pull-left,
       .featurette-image.pull-right {
-        display:block;
+        display: block;
         float: none;
         max-width: 40%;
-        margin: 0px auto 20px;
+        margin: 0 auto 20px;
       }
     }
 
@@ -276,7 +246,7 @@
       }
       .carousel-caption {
         width: 65%;
-        padding: 14px 70px;
+        padding: 0 70px;
         margin-top: 100px;
       }
       .carousel-caption h1 {
@@ -290,6 +260,15 @@
       .marketing .span4 + .span4 {
         margin-top: 40px;
       }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
     }
     </style>
 
@@ -315,6 +294,7 @@
     <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
+
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
@@ -330,7 +310,7 @@
                 <li class="active"><a href="https://aviose2019.github.io/index_en.html">Home</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
-                  <a href="https://aviose2019.github.io/call.html" class="dropdown-toggle" data-toggle="dropdown">Call for Paper <b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Call for Paper <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="https://aviose2019.github.io/call_en.html#u21">Topics of Interest</a></li>
                     <li><a href="https://aviose2019.github.io/call_en.html#u22">Dates</a></li>
@@ -339,7 +319,7 @@
                   </ul>
                 </li>
                   <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Program <b class="caret"></b></a>
+                  <a href="https://aviose2019.github.io/program.html" class="dropdown-toggle" data-toggle="dropdown">Program <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="https://aviose2019.github.io/program.html">Schedule</a></li>
                   </ul>
@@ -347,13 +327,13 @@
                   <li class="dropdown">
                   <a href="https://aviose2019.github.io/organization.html" class="dropdown-toggle" data-toggle="dropdown">Organization <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="https://aviose2019.github.io/organization.html">Workshop Chair</a></li>
-                    <li><a href="https://aviose2019.github.io/organization.html">Program Committee</a></li>
+                    <li><a href="https://aviose2019.github.io/organization.html#u21">Workshop Chair</a></li>
+                    <li><a href="https://aviose2019.github.io/organization.html#u22">Program Committee</a></li>
                   </ul>
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
-              <div id="sprache"> <a href="https://aviose2019.github.io/index.html"> DE </a> / <a href="https://aviose2019.github.io/index_en.html"> EN </a>  </div>
+              <div id="sprache"> <a href=""> DE </a> / <a href=""> EN </a>  </div>
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
 
@@ -371,7 +351,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Welcome to AvioSE</h1>
-              <p class="lead">The first Avionic workshop on the SE. </p>
+              <p class="lead">he first Avionic workshop on the SE.</p>
             </div>
           </div>
         </div>
@@ -407,61 +387,126 @@
         February 19, 2019, Stuttgart, Deutschland
           </div>
 
-    <div id="u1">
+      <div id="u1">
         Co- located with SE 2019
           </div>
 
       <hr class="featurette-divider">
 
         <div id="u21">
-        News
+        Call for Papers
       </div>
 
-      <table id="news">
+      <div id="u3">
+            The objective of the workshop is the presentation of methods and technologies of the avionics domain. Topics of interest, but not limited to these, are: <br>
+        </div>
+
+      <div id="u4">
+            Development technologies:
+        </div>
+
+        <ul id="engeauswahl">
+            <li>Modelling languages and tools</li>
+            <li>Transfer of modelling techniques to industrial application</li>
+            <li>Verification via testing and formal methods</li>
+            <li>Security & Safety</li>
+        </ul>
+
+        <div id="u4">
+            Development methods:
+        </div>
+
+        <ul id="engeauswahl">
+            <li>Certification</li>
+            <li>Agile development</li>
+            <li>Interaction with other domains (e. g. phisics, psychology)</li>
+        </ul>
+
+        <div id="u4">
+            Product technologies:
+        </div>
+
+      <ul id="engeauswahl">
+            <li>Applications of artifical intelligence (including verification)</li>
+            <li>Autonomuous Systems</li>
+        </ul>
+
+        <div id="u4">
+            Sonstige Herausforderungen
+        </div>
+
+        <ul id="engeauswahl">
+            <li>Reference architectures for hard- and software and interfaces between sub-systems</li>
+            <li>Sensors and sensor fusion</li>
+            <li>Integrated Modular Avionics </li>
+            <li>Obsolescence (management)</li>
+        </ul>
+
+      <hr class="featurette-divider">
+
+      <div id="u22">
+        Dates
+            </div>
+
+      <table id="termine">
             <tr>
-                <td> TBD </td>
-                <td> Announcement of the workshop program</td>
+                <td> Paper submission deadline</td>
+                <td> Dec 14, 2018 </td>
             </tr>
             <tr>
-                <td> TBD </td>
-                <td> Announcement of the keynote speaker</td>
+                <td> Paper acceptance notification</td>
+                <td> Jan 25,2019 </td>
             </tr>
         </table>
 
       <hr class="featurette-divider">
 
-       <!-- START THE FEATURETTES       -->
+      <div id="u23">
+        Assessment and Selection of Submissions
+            </div>
+
+        <div id="u3">
+            The requested submissions lie in the field of expertise of the Organisation and Program Committee. They are assessed according to the following scientific criteria:
+        </div>
+
+        <ul id="auswahl">
+            <li>Reasonable structure (problem statement and related work, solution, evaluation of the presented approach)</li>
+            <li>Presentation of the unique feature of the submission w. r. t. existing solutions</li>
+            <li>Intersubjectively comprehensible compilation</li>
+            <li>Relevance of the presented approach</li>
+            <li>Innovation of the submission</li>
+            <li>Sustainability of the solution</li>
+            <li>Appropriate citation of relevant scientific publications</li>
+            <li>Form (language, spelling, grammar and formating)</li>
+        </ul>
 
       <hr class="featurette-divider">
 
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/ueber_workshop.png">
-        <h2 class="featurette-heading">About the workshop </h2>
-        <p class="featurette-lead">Software development in the aerospace domain is characterized by increasing complexity, new application potentials, and rising certification requirements. Future applications as e. g. autonomos air transport and commercial UAVs and further development of existing functionality demand for new development methodologies. At the same time there are issues of communication and navigation in airspace, multi-core processors or artificial intelligence.</p>
-      </div>
+        <div id="u24">
+        Submission, Presentation and Publication
+            </div>
 
-      <hr class="featurette-divider">
+        <div id="u3">
+            We welcome two kinds of contributions <br>
+          </div>
 
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/wichtige_termine.png">
-        <h2 class="featurette-heading">Important dates </h2>
-        <p class="featurette-lead">Dec 14, 2018 Paper submission deadline</p>
-          <p class="featurette-lead">Jan 25,2019 Paper acceptance notification</p>
-      </div>
+    <table id="termine">
+            <tr>
+                <td> Full Paper: </td>
+                <td> The paper does not exceed 8 pages and  states completed research. </td>
+            </tr>
+            <tr>
+                <td> Short Paper: </td>
+                <td> The paper does not exceed 4 pages and states ongoing research. </td>
+            </tr>
+        </table>
 
-      <hr class="featurette-divider">
+    <div id="u3">
+Accepted contributions must be presented by one of the authors. <br>
+          All accepted contributions will be published within the SE- workshop proceedings and be available in <a href="http://ceur-ws.org/">COER-WS</a>. The papers must follow <a href="https://www.ieee.org/conferences/publishing/templates.html"> IEEE (double column) formatting</a> guidelines and be submitted via <a href="https://easychair.org/conferences/?conf=aviose2019"> EasyChair </a>.
+    </div>
 
-       <div id="u21">
-        Co-located mit SE
-      </div>
-
-
-      <div id="u3">
-        AvioSE is co- located with SE 2019. Visit SE 2019 <a href="https://se19.uni-stuttgart.de/"> here </a>.
-      </div>
-
-      <hr class="featurette-divider">
-
+    <hr class="featurette-divider">
 
     <!-- Die Icons
     ================================================== -->
@@ -473,28 +518,56 @@
             <img src="../assets/img/examples/CfP_logo.png" class="img-polaroid">
           <h2>Call for Paper</h2>
           <p>Contribute to the workshop.</p>
-          <p><a class="btn" href="https://aviose2019.github.io/call.html">To Call for Paper &raquo;</a></p>
+          <p><a class="btn" href="https://aviose2019.github.io/call.html">To  Call for Paper &raquo;</a></p>
         </div>
         <div class="span4">
             <img src="../assets/img/examples/Programm_logo.png" class="img-polaroid">
+          <!-- <img class="../assets/img/examples/CfP_logo.png" data-src="holder.js/140x140">-->
           <h2>Program</h2>
-          <p>Interactive program with presentations and discussions. </p>
-          <p><a class="btn" href="https://aviose2019.github.io/program.html">To program &raquo;</a></p>
+          <p>Interactive program with presentations and discussions.</p>
+          <p><a class="btn" href="https://aviose2019.github.io/program.html">Zum Programm &raquo;</a></p>
         </div>
         <div class="span4">
             <img src="../assets/img/examples/Organisation_logo.png" class="img-polaroid">
+          <!-- <img class="img-circle" data-src="holder.js/140x140"> -->
           <h2>Orga und Rewiew</h2>
           <p>Three reviewer will provide feedback</p>
-          <p><a class="btn" href="https://aviose2019.github.io/organization.html">To programm committee &raquo;</a></p>
+          <p><a class="btn" href="https://aviose2019.github.io/organization.html">To program committee &raquo;</a></p>
         </div>
       </div>
 
-    <hr class="featurette-divider">
 
 
 
+      <!-- START THE FEATURETTES
 
+      <hr class="featurette-divider">
 
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      -->
 
         <!-- Footer
     ================================================== -->
