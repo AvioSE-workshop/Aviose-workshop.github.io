@@ -169,6 +169,13 @@ textarea {
   vertical-align: top;
 }
 
+#sprache {
+    color:floralwhite;
+    text-align: right;
+    margin-top: 0em;
+    vertical-align: middle;
+}
+
 #u1 {
     text-align: center;
     margin-top: 0em;
