@@ -2,308 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>AvioSE &middot; 2019</title>
+    <title>AvioSE19 - 1st Workshop on Software Engineering for Avionics Systems</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <style>
-
-
-    /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-    /*body {
-    background-color: floralwhite;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin:auto;
-    max-width:none;
-    /*padding: 2em 2em 4em; */
-}*/
-
-
-    body {
-        background-color: floralwhite;
-        margin: auto;
-      padding-bottom: 40px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-      color: #5a5a5a;
-    }
-
-
-
-
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
-
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-
-
-
-    /* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------------- */
-
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
-
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
-
-    .carousel-control {
-      height: 80px;
-      margin-top: 0;
-      font-size: 150px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
-
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
-
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-        margin-left: 10px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      line-height: 1.25;
-      color:darkslateblue;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
-
-
-
-    /* MARKETING CONTENT
-    -------------------------------------------------- */
-
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-
-    /* Featurettes
-    ------------------------- */
-
-    .featurette-divider {
-      margin: 40px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
-        padding-left: 110px;
-        padding-right: 110px;
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-        padding: 5px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        margin-top: -10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
-
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
-
-    /* Thin out the marketing headings */
-    .featurette-heading {
-        text-align:left;
-        margin-top: 0em;
-        font-weight: 800;
-        line-height: 1;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: darkslateblue;
-        letter-spacing: -1px;
-        font-size: 24px;
-        max-width: 1000px;
-        margin: 0 auto;
-        max-width: 1000px;
-        padding: 0.5em 1em 1em;
-    }
-
-    .featurette-lead {
-        text-align:left;
-        margin-top: 0em;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #545454;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 18px;
-        margin: 0 auto;
-        max-width: 1000px;
-        padding: 0.5em 2em 2em;
-    }
-
-
-
-    /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
-
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
-
-      .featurette {
-        height:auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display:block;
-        float: none;
-        max-width: 40%;
-        margin: 0px auto 20px;
-      }
-    }
-
-
-    @media (max-width: 767px) {
-
-      .navbar-inner {
-        margin: -20px;
-      }
-
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
-
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 14px 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
-
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
-    }
-    </style>
+    <link href="assets/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/aviose.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
   </head>
 
   <body>
@@ -312,232 +29,349 @@
 
     <!-- NAVBAR
     ================================================== -->
-    <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-      <div class="container">
-        <div class="navbar navbar-inverse">
-          <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="https://aviose2019.github.io/index.html">AvioSE</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="https://aviose2019.github.io/index.html">Home</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
-                <li class="dropdown">
-                  <a href="https://aviose2019.github.io/call.html" class="dropdown-toggle" data-toggle="dropdown">Call for Paper <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="https://aviose2019.github.io/call.html">CfP Gesamt</a></li>
-                    <li><a href="https://aviose2019.github.io/call.html#u21">Beitragsthemen</a></li>
-                    <li><a href="https://aviose2019.github.io/call.html#u22">Termine</a></li>
-                    <li><a href="https://aviose2019.github.io/call.html#u23">Auswahlverfahren</a></li>
-                    <li><a href="https://aviose2019.github.io/call.html#u24">Einreichung, Präsentation und Veröffentlichung</a></li>
-                  </ul>
-                </li>
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programm <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="https://aviose2019.github.io/program.html">Programm Gesamt</a></li>
-                    <li><a href="https://aviose2019.github.io/program.html">Ablauf</a></li>
-                  </ul>
-                </li>
-                  <li class="dropdown">
-                  <a href="https://aviose2019.github.io/organization.html" class="dropdown-toggle" data-toggle="dropdown">Organisation <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="https://aviose2019.github.io/organization.html">Orga Gesamt</a></li>
-                    <li><a href="https://aviose2019.github.io/organization.html">Organisationsteam</a></li>
-                    <li><a href="https://aviose2019.github.io/organization.html">Programmkomitee</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!--/.nav-collapse -->
-              <div id="sprache"> <a href="https://aviose2019.github.io/index.html"> DE </a> / <a href="https://aviose2019.github.io/index_en.html"> EN </a>  </div>
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
 
-      </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
+	<div class="container">
+	
+	
+		<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+		  <a class="navbar-brand" href="#">AvioSE19</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
 
-
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html#call">Call for Paper</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html#program">Programm</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html#committee">Komitee</a>
+			  </li>	
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+			  <a href="index.html" class="btn btn-primary my-2 my-sm-0" type="submit">DE</a>
+			  <a href="index_en.html" class="btn btn-outline my-2 my-sm-0" type="submit">EN</a>
+			</form>
+		  </div>
+		</nav>
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
+    <div id="myCarousel" class="carousel slide"  data-ride="carousel">
+	  <ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  </ol>
       <div class="carousel-inner">
-        <div class="item active">
-          <img src="../assets/img/examples/new-01.png" alt="">
-          <div class="container">
+        <div class="carousel-item active">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-01.png" alt="">
             <div class="carousel-caption">
               <h1>Willkommen bei AvioSE</h1>
-              <p class="lead">Der erste Avionic Workshop auf der SE.</p>
+              <p>1st Workshop on Software Engineering for Avionics Systems</p>
+			  <p class="d-none d-md-block">19. Februar 2019 in Stuttgart</p>
+			  <p class="d-none d-md-block">Bestandteil der <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a> (18.-22. Februar 2019)</p>
             </div>
-          </div>
         </div>
-        <div class="item">
-          <img src="../assets/img/examples/new-02.png" alt="">
-          <div class="container">
+        <div class="carousel-item">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-02.png" alt="">
             <div class="carousel-caption">
               <h1>Inhalte aus Wissenschaft und Industrie</h1>
+			  <p>1st Workshop on Software Engineering for Avionics Systems</p>
+			  <p class="d-none d-md-block">19. Februar 2019 in Stuttgart</p>
+			  <p class="d-none d-md-block">Bestandteil der <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a> (18.-22. Februar 2019)</p>
             </div>
-          </div>
         </div>
-        <div class="item">
-          <img src="../assets/img/examples/new-03.png" alt="">
-          <div class="container">
+        <div class="carousel-item">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-03.png" alt="">
             <div class="carousel-caption">
-              <h1>Peer- reviewed Auswahlverfahren</h1>
-              <p class="lead">Durchgeführt durch industrielle und akademische Partner des Workshops.</p>
+              <h1>Peer-Review-Auswahlverfahren durch akademisches und industrielles Komitee</h1>
+              <p>1st Workshop on Software Engineering for Avionics Systems</p>
+			  <p class="d-none d-md-block">19. Februar 2019 in Stuttgart</p>
+			  <p class="d-none d-md-block">Bestandteil der <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a> (18.-22. Februar 2019)</p>
             </div>
-          </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Vor</span>
+	  </a>
+	  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Zur&uuml;ck</span>
+	  </a>
     </div><!-- /.carousel -->
 
       <!-- Die Inhalte ================================================== -->
+	<div class="section1">
+	<span class="glyphicon glyphicon-star"></span>
+		<a name="home"></a><h2><span class="glyphicon glyphicon-star"></span>AVIOSE19, 19. Februar 2019, Stuttgart</h2>
+		<p>
+		Die Software-Entwicklung in der Luft- und Raumfahrt ist durch zunehmende Komplexität, neue Anwendungsmöglichkeiten und gestiegene Zulassungsanforderungen gekennzeichnet. Zukünftige Anwendungen wie autonomer Lufttransport und Drohneneinsatz im kommerziellen Segment sowie die Weiterentwicklung bestehender Funktionalitäten erfordern neue Entwicklungsmethoden. Gleichzeitig existieren Fragestellungen z. B. in der Kommunikation und Navigation im Luftraum, der Technologie von Mehrkernprozessoren oder der künstlichen Intelligenz.
+		</p>
+	
+		<!-- news -->
+		
+		<h3>News</h3>
 
-      <div id="u1">
-        1st Workshop on Software Engineering for Avionics Systems
-          </div>
+		<table id="newss" class="table">
+			<tr>
+				<td> TBD </td>
+				<td> Veröffentlichung des Programms</td>
+			</tr>
+			<tr>
+				<td> TBD </td>
+				<td> Bekanntmachung des Keynote-Sprechers</td>
+			</tr>
+		</table>
 
-      <div id="u1">
-        19. Februar 2019, Stuttgart, Deutschland
-          </div>
-    
-    <div id="u1">
-        Co- located with SE 2019
-          </div>
 
-      <hr class="featurette-divider">
+		
+		<h3>Wichtige Termine</h3>
+		<table id="dates" class="table table-striped table-bordered">
+			<tr>
+				<td>14.12.2018</td>
+				<td> Einreichungsfrist für Workshop-Beiträge</td>
+			</tr>
+			<tr>
+				<td>25.01.2019</td>
+				<td>Benachrichtigung über die Annahme der Workshop-Beiträge</td>
+			</tr>
+			<tr>
+				<td>07.02.2019</td>
+				<td>Einreichungsfrist für finale Workshop-Beiträge</td>
+			</tr>
+			<tr>
+				<td>Ende Januar 2019</td>
+				<td>Konferenzanmeldung öffnet</td>
+			</tr>
+			<tr>
+				<td> 19.02.2019 </td>
+				<td> AvioSE-Workshop</td>
+			</tr>
+		</table>
+		
+		<h3>Konferenzanmeldung</h3>
+		
+		<p>
+			Teilnehmer und Autoren müssen sich für die Teilnahme über die Seite der <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a> registrieren. Bei einer ausschließlichen Teilnahme am Workshop wird eine vergünstigte Rate angeboten. Die Konferenzanmeldung ist vorrausichtlich ab Ende Januar 2019 möglich.
+		</p> 
+		<div class="text-center">		
+			<a target="_blank" href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-pressed="true">Anmelden! (noch nicht möglich)</a>
+		</div>
+		<p>
+			
+		</p>  
+		
+		
+		</div> <!-- section -->
+		<div class="section2">
+		<!-- Call -->
+		<a name="call"></a><h2>Call for Papers (<a target="_blank" href="AVIOSE2019-CfP.pdf">PDF</a>)</h2>
+		<p>
+            Das Ziel des Workshops ist die Darstellung von Methoden und Technologien der Avionik-Domäne. Die Themen im Interesse des Workshops sind im Einzelnen, aber nicht notwendigerweise darauf beschränkt: <br>
+        </p>
+		
+		<div class="row">
+			<div class="col-sm">
+		<p class="font-weight-bold">
+            Entwicklungstechnologien:
+        </p>
+        <ul>
+            <li>Anforderungserhebung </li>
+            <li>Modellierungssprachen, -werkzeuge</li>
+            <li>Praxis-Transfer der Modellierungstechniken</li>
+            <li>Verifikation mittels Testen und/oder formaler Methoden</li>
+            <li>Security & Safety</li>
+        </ul>
+		</div>
+		
+		<div class="col-sm">
+        <p class="font-weight-bold">
+            Entwicklungsmethoden:
+        </p>
+        <ul>
+            <li>Zertifizierungen</li>
+            <li>Agile Entwicklung</li>
+            <li>Interaktion mit anderen Domänen (Physik, Psychologie, etc.)</li>
+        </ul>
+		</div>
+		
+		<div class="col-sm">
+        <p class="font-weight-bold">
+            Produkttechnologien:
+        </p>
+        <ul>
+            <li>Anwendungen künstlicher Intelligenz (bis zur Verifikation)</li>
+            <li>Autonome Systeme</li>
+        </ul>
 
-        <div id="u21">
-        Neuigkeiten
-      </div>
+		</div>
+		
+		<div class="col-sm">
+        <p class="font-weight-bold">
+            Sonstige Herausforderungen:
+        </p>
+        <ul>
+            <li>Referenzarchitekturen für Hard- und Software sowie Schnittstellen zwischen Subsystemen</li>
+            <li>Sensoren und Sensorfusion</li>
+            <li>Integrated Modular Avionics (IMA)</li>
+            <li>Obsoleszenz</li>
+        </ul>
+		</div>
+		</div>
 
-      <table id="news">
+
+      
+        <h3>Art der Einreichung</h3>
+
+        <p>
+            Beim AvioSE werden zwei Arten von Beiträgen akzeptiert: <br>
+        </p>
+
+        <ul>
+            <li><u>Full Paper</u>:  Der Beitrag ist auf bis zu 8 Seiten dargestellt und stellt Forschungsergebnisse vollständig dar. </li>
+            <li><u>Short Paper</u>: Der Beitrag ist auf bis zu 4 Seiten dargestellt und stellt begonnene Projekte dar. </li>
+        </ul>
+		
+		<p>Die Beiträge werden im gemeinsamen Tagungsband der SE-Konferenz in <a href="http://ceur-ws.org/">COER-WS</a> veröffentlicht.</p>
+
+		<p class="danger">!!!Es ist zwingend, dass mindestens ein Autor die Inhalte des angenommenen Beitrags im Workshop vorstellt!!! </p>
+		
+		<h3>How to Contribute?</h3>
+    <p>  
+		Bitte nutzen Sie die zweispaltige <a href="https://www.ieee.org/conferences/publishing/templates.html"> IEEE Formatvorlage </a>.
+	</p>
+	<div class="text-center">
+		<a target="_blank" href="https://www.ieee.org/conferences/publishing/templates.html" class="btn btn-primary btn-lg btn-success" role="button" aria-pressed="true">Vorlage herunterladen!</a>
+	</div>
+	
+	<p>
+		Die Beiträge sind über  <a href="https://easychair.org/conferences/?conf=aviose2019"> EasyChair </a>einzureichen. Wenn Sie dort über keinen Account verfügen, müssen Sie einen anlegen.
+	</p>  
+	<div class="text-center">
+		<a target="_blank" href="https://easychair.org/conferences/?conf=aviose2019" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Paper einreichen!</a>
+	</div>
+	
+	<h3>Auswahlverfahren</h3>
+
+        <p>
+            Bei der Auswahl der Einreichungen werden diese nach den folgenden wissenschaftlichen Kriterien bewertet:
+        </p>
+
+        <ul>
+            <li>Sinnvoller Aufbau (Problemstellung und andere Ansätze, Lösungsvorschlag, Evaluierung der Lösung)</li>
+            <li>Herausarbeitung eines Alleinstellungsmerkmals im Gegensatz zu existierenden Lösungen</li>
+            <li>Intersubjektiv nachvollziehbare Darstellung</li>
+            <li>Relevanz des Beitrags</li>
+            <li>Tragfähigkeit der Lösung</li>
+            <li>Innovation des Beitrags</li>
+            <li>Angemessene Zitation relevanter Literatur aus dem wissenschaftlichen Bereich</li>
+            <li>Form (Sprache, Orthographie, Grammatik sowie Formatierung)</li>
+        </ul>
+		
+		
+		</div> <!-- section -->
+		<div class="section1">
+		<!-- Program -->
+		<a name="program"></a><h2>Programm</h2>
+		
+      <p>
+        Der Workshop ist als ganztägige Veranstaltung angesetzt. Der genaue Ablauf wird nach Feststellung der angenommenen Beiträge bekanntgegeben.
+            </p>
+
+      <table id="dates" class="table table-striped table-bordered">
+			 <thead>
+				<tr>
+				  <th scope="col">Agenda</th>
+				  <th scope="col">Zeit</th>
+				</tr>
+			  </thead>
             <tr>
-                <td> TBD </td>
-                <td> Veröffentlichung des Programms</td>
+                <td>Registrierung</td>
+                <td>(TBD)</td>
             </tr>
             <tr>
-                <td> TBD </td>
-                <td> Bekanntmachung des Keynote Sprechers</td>
+                <td>Keynotes</td>
+                <td>(TBD)</td>
+            </tr>
+			<tr>
+                <td>Technische Vorträge</td>
+                <td>(TBD)</td>
+            </tr>
+			<tr>
+                <td>Social Event</td>
+                <td>(TBD)</td>
             </tr>
         </table>
 
-      <hr class="featurette-divider">
+		</div> <!-- section -->
+		<div class="section2">
+		<!-- Comittee -->
+		<a name="committee"></a><h2>Komitee</h2>
+		
+		<p>
+            Für Anliegen und Fragen bezüglich des Workshops kontaktieren Sie bitte Marina Reich unter der Email: <a href="#">marinr[AT]hrz.tu-chemnitz.de</a>.
+        </p>
+		
+		<h3>Organizationsteam</h3>
+        <p>
+            Jun.- Prof. Björn Annighöfer, Universität Stuttgart <br>
+            Dr. Andreas Schweiger, Airbus Defence and Space GmbH <br>
+            Marina Reich, Airbus Defence and Space GmbH, Universität Chemitz
+        </p>
+     
 
-       <!-- START THE FEATURETTES       -->
+        <h3>Programmkomitee</h3>
+        <p>
+            Jun.- Prof. Björn Annighöfer, Universität Stuttgart <br>
+            Prof. Dr. André Windisch, Airbus Defence and Space GmbH, Universität Chemnitz <br>
+            Dr. Harald Ruess, fortiss GmbH <br>
+            Prof. Dr. Matthias Tichy, Universität Ulm <br>
+            Prof. Dr. Lars Grunske, Humboldt- Universität zu Berlin <br>
+            Prof. Dr. Bernhard Rumpe, RWTH Aachen University <br>
+            Prof. Dr. Eric Knauss, University of Gothenburg <br>
+            Prof. Dr. Alexander Pretschner, Technische Universität München <br>
+            Prof. Dr. Ralf God, Technische Universität Hamburg  <br>
+            Jürgen Krug, Diehl Aerospace GmbH <br>
+            Dr. Winfried Lohmiller, Airbus Defence and Space GmbH <br>
+            Alfred Lief, Airbus Defence and Space GmbH <br>
+            Ulrich Fräbel, Rolls Royce Group <br>
+            Dr. Stephan Rudolph, Northrop Grumman LITEF GmbH <br>
 
-      <hr class="featurette-divider">
+        </p>
 
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/ueber_workshop.png">
-        <h2 class="featurette-heading">Über den Workshop </h2>
-        <p class="featurette-lead">Die Software-Entwicklung in der Luft- und Raumfahrt ist durch zunehmende Komplexität, neue Anwendungsmöglichkeiten und gestiegene Zulassungsanforderungen gekennzeichnet. Zukünftige Anwendungen wie autonomer Lufttransport und Drohneneinsatz im kommerziellen Segment sowie die Weiterentwicklung bestehender Funktionalitäten erfordern neue Entwicklungsmethoden. Gleichzeitig existieren Fragestellungen z. B. in der Kommunikation und Navigation im Luftraum, der Technologie von Mehrkernprozessoren oder der künstlichen Intelligenz.</p>
-      </div>
+		
 
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/wichtige_termine.png">
-        <h2 class="featurette-heading">Wichtige Termine </h2>
-        <p class="featurette-lead">14.12.2018 Einreichungsfrist für Workshop-Beiträge</p>
-          <p class="featurette-lead">25.01.2019 Benachrichtigung für Workshop-Beiträge</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-       <div id="u21">
-        Co-located mit SE
-      </div>
-
-
-      <div id="u3">
-        Der Workshop findet als Teil der SE- Konferenz statt. Besuchen Sie die Konferenzseite <a href="https://se19.uni-stuttgart.de/"> hier </a>.
-      </div>
-
-      <hr class="featurette-divider">
-
-
-    <!-- Die Icons
-    ================================================== -->
-
-    <div class="container marketing">
-
-      <div class="row">
-        <div class="span4">
-            <img src="../assets/img/examples/CfP_logo.png" class="img-polaroid">
-          <h2>Call for Paper</h2>
-          <p>Finden Sie heraus, ob Ihr Projekt/ Ihre Forschung zum Workshop passt.</p>
-          <p><a class="btn" href="https://aviose2019.github.io/call.html">Zum Call for Paper &raquo;</a></p>
-        </div>
-        <div class="span4">
-            <img src="../assets/img/examples/Programm_logo.png" class="img-polaroid">
-          <h2>Programm</h2>
-          <p>Es wird ein spannender Tag in einem Mix aus Vorträgen und Diskussionen. </p>
-          <p><a class="btn" href="https://aviose2019.github.io/program.html">Zum Programm &raquo;</a></p>
-        </div>
-        <div class="span4">
-            <img src="../assets/img/examples/Organisation_logo.png" class="img-polaroid">
-          <h2>Orga und Review</h2>
-          <p>Drei Reviewer werden die Beiträge bewerten.</p>
-          <p><a class="btn" href="https://aviose2019.github.io/organization.html">Zum Programmkomitee &raquo;</a></p>
-        </div>
-      </div>
-
-    <hr class="featurette-divider">
-
-
-
+	</div> <!-- section -->
 
 
 
         <!-- Footer
     ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <p>Designed and built with Themes of <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.</p>
-        <p> <a href="#">Back to top</a></p>
-      </div>
-    </footer>
 
-      <!-- FOOTER
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer> -->
-
-
-
+	<div class="footer">
+		<p>Designed and built with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+		<p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.</p>
+		<p>AvioSE is co-located with SE 2019. Visit SE 2019 <a target="_blank" href="https://se19.uni-stuttgart.de/en/">here</a>.</p>
+		<p> <a href="#">Back to top</a></p>
+	</div>
 
     </div><!-- /.container -->
-
 
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap4/js/bootstrap.min.js"></script>
+   
     <script>
       !function ($) {
         $(function(){
@@ -546,6 +380,5 @@
         })
       }(window.jQuery)
     </script>
-    <script src="../assets/js/holder/holder.js"></script>
   </body>
 </html>
