@@ -7,80 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
     <link href="assets/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">-->
-    <style>
-
-
-    /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-
-    body {
-        background-color: floralwhite;
-        margin: auto;
-      padding-bottom: 40px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-      color: #5a5a5a;
-    }
-	
-	h2 {
-		color: darkslateblue;
-		font-size: 2em;
-		padding-top: 2em;
-	}
-	
-	h3 {
-		font-size: 1.5em;
-		padding-top: 1em;
-	}
-	
-	div.section1 {
-		//background-color: #eeeeee;
-		border-bottom: 0.1em solid darkslateblue;
-		padding: 0.5em;
-	}
-
-	div.section2 {
-		background-color: #aaaaaa;
-		color: #222222;
-		border-bottom: 0.1em solid darkslateblue;
-		padding: 0.5em;
-	}
-	
-	div.footer {
-		background-color: rgb(52, 58, 64);
-		color: rgba(255, 255, 255, 0.5);
-		padding: 0.5em;
-	}
-	
-	div.footer p {
-		text-align:center;
-		padding: 0.0em;
-		margin: 0.1em;
-	}
-	
-	div.carousel-caption {
-		margin: 0;
-		line-height: 1.25;
-		color:darkslateblue;
-		text-shadow: 0 1px 1px rgba(0,0,0,.4);
-	}
-	
-	p a {
-		color: darkred;
-		text-decoration: underline;
-	}
-	
-	p.danger {
-		font-weight: bold;
-		color: red;
-	}
-
-    </style>
+    <link href="assets/css/aviose.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -114,7 +42,7 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="index_en_short.html">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="index_en_short.html">Home</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="index_en_short.html#call">Call for Paper</a>
@@ -127,7 +55,7 @@
 			  </li>	
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-			  <a href="index_en_short.html" class="btn btn-outline my-2 my-sm-0" type="submit">DE</a>
+			  <a href="index_short.html" class="btn btn-outline my-2 my-sm-0" type="submit">DE</a>
 			  <a href="index_en_short.html" class="btn btn-primary my-2 my-sm-0" type="submit">EN</a>
 			</form>
 		  </div>
@@ -143,7 +71,7 @@
 	  </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img height="500" class="d-block w-100" src="assets/img/examples/new-01.png" alt="">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-01.png" alt="">
             <div class="carousel-caption d-none d-md-block">
               <h1>Welcome to AvioSE19</h1>
               <p class="lead">1st Workshop on Software Engineering for Avionics Systems</p>
@@ -152,7 +80,7 @@
             </div>
         </div>
         <div class="carousel-item">
-          <img height="500" class="d-block w-100" src="assets/img/examples/new-02.png" alt="">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-02.png" alt="">
             <div class="carousel-caption d-none d-md-block">
               <h1>Scientific and industrial state of the art contributions</h1>
 			  <p class="lead">1st Workshop on Software Engineering for Avionics Systems</p>
@@ -161,7 +89,7 @@
             </div>
         </div>
         <div class="carousel-item">
-          <img height="500" class="d-block w-100" src="assets/img/examples/new-03.png" alt="">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-03.png" alt="">
             <div class="carousel-caption d-none d-md-block">
               <h1>Peer-review by an academic and industrial committee</h1>
               <p class="lead">1st Workshop on Software Engineering for Avionics Systems</p>
@@ -223,12 +151,16 @@
 				<td> End of Jan 2019 </td>
 				<td> Conference and workshop registration opens</td>
 			</tr>
+			<tr>
+				<td> Feb 19, 2019 </td>
+				<td> Day of the workshop</td>
+			</tr>
 		</table>
 		
 		<h3>Registration</h3>
 		
 		<p>
-			Participation as an author or listener requires a registration at the hosting conference <a target="_blank" href="https://se19.uni-stuttgart.de/en/"> SE19 </a>. Reduced packages for a attending the workshop only are available. Registration have not started so far. It opens approximatelly at the end of January 2019.
+			Participation as an author or listener requires a registration at the hosting conference <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a>. Reduced packages for a attending the workshop only are available. Registration have not started so far. It opens approximatelly at the end of January 2019.
 		</p> 
 		<div class="text-center">		
 			<a target="_blank" href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-pressed="true">Register! (come back later)</a>
@@ -304,8 +236,8 @@
         </p>
 
         <ul>
-            <li> Full Paper:  The paper does not exceed 8 pages and  states completed research. </li>
-            <li> Short Paper: The paper does not exceed 4 pages and states ongoing research. </li>
+            <li><u>Full Paper</u>:  The paper does not exceed 8 pages and  states completed research. </li>
+            <li><u>Short Paper</u>: The paper does not exceed 4 pages and states ongoing research. </li>
         </ul>
 		
 		<p>All accepted contributions will be published within the SE-workshop proceedings and be available in <a href="http://ceur-ws.org/">COER-WS</a>. </p>
@@ -321,7 +253,7 @@
 	</div>
 	
 	<p>
-		The papers are to be submitted using <a href="https://easychair.org/conferences/?conf=aviose2019"> EasyChair </a>. If you do not have an EasyChair account, you need to create a new one.
+		The papers are to be submitted using <a href="https://easychair.org/conferences/?conf=aviose2019">EasyChair</a>. If you do not have an EasyChair account, you need to create a new one.
 	</p>  
 	<div class="text-center">
 		<a target="_blank" href="https://easychair.org/conferences/?conf=aviose2019" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Submitt a paper!</a>
@@ -424,24 +356,14 @@
         <!-- Footer
     ================================================== -->
 
-  <div class="footer">
-	<p>Designed and built with Themes of <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
-	<p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.</p>
-	<p>AvioSE is co-located with SE 2019. Visit SE 2019 <a target="_blank" href="https://se19.uni-stuttgart.de/en/"> here </a>.</p>
-	<p> <a href="#">Back to top</a></p>
-  </div>
-
-      <!-- FOOTER
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer> -->
-
-
-
+	<div class="footer">
+		<p>Designed and built with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+		<p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.</p>
+		<p>AvioSE is co-located with SE 2019. Visit SE 2019 <a target="_blank" href="https://se19.uni-stuttgart.de/en/">here</a>.</p>
+		<p> <a href="#">Back to top</a></p>
+	</div>
 
     </div><!-- /.container -->
-
 
 
     <!-- Le javascript
@@ -449,18 +371,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
 	<script src="assets/bootstrap4/js/bootstrap.min.js"></script>
-    <!--<script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>-->
+   
     <script>
       !function ($) {
         $(function(){
@@ -469,6 +380,5 @@
         })
       }(window.jQuery)
     </script>
-    <script src="assets/js/holder/holder.js"></script>
   </body>
 </html>

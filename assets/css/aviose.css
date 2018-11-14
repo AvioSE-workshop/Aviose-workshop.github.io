@@ -1,0 +1,67 @@
+body {
+	background-color: floralwhite;
+	margin: auto;
+	padding-bottom: 40px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #5a5a5a;
+}
+
+h2 {
+	color: darkslateblue;
+	font-size: 2em;
+	font-weight: bold;
+	padding-top: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+	padding-top: 1em;
+	font-weight: bold;
+}
+
+div.section1 {
+	color: #000000;
+	border-bottom: 0.1em solid darkslateblue;
+	padding: 0.5em;
+}
+
+div.section2 {
+	background-color: #aaaaaa;
+	color: #222222;
+	border-bottom: 0.1em solid darkslateblue;
+	padding: 0.5em;
+}
+
+div.footer {
+	background-color: #402727;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 0.5em;
+}
+
+div.footer p {
+	text-align:center;
+	padding: 0.0em;
+	margin: 0.1em;
+}
+
+div.carousel-caption {
+	margin: 0;
+	line-height: 1.25;
+	color:darkslateblue;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+p a {
+	color: darkred;
+	text-decoration: underline;
+}
+
+p.danger {
+	font-weight: bold;
+	color: red;
+}
+
+img.carousel-img {
+	height:25em;
+}
