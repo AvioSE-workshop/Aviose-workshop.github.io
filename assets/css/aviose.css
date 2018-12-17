@@ -66,4 +66,39 @@ img.carousel-img {
 	height:25em;
 }
 
+marqee.navbaralert {
+	font-weight: bold;
+	color: red;
+	width: 10em;
+}
+
+span.changed {
+	text-decoration: line-through;
+}
+
+span.emphasized {
+	font-weight: bold;
+	color: red;
+}
+
+h4.newshead {
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+}
+
+td.newsdate {
+	color: black;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+p.newsbody {
+	color: black;
+	font-size: 16px;
+}
+
+
 
