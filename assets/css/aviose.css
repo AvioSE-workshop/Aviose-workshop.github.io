@@ -100,5 +100,29 @@ p.newsbody {
 	font-size: 16px;
 }
 
+tr.agendaofficial td {
+	background-color: #00ff00
+}
+
+tr.agendakeynote td {
+	background-color: #cccccc
+}
+
+tr.agendatalk td {
+	background-color: #00ffff
+}
+
+tr.agendaworkshop td {
+	background-color: #ffcc00
+}
+
+tr.agendabreak td {
+	background-color: #ffff00
+}
+
+tr.agendasocial td {
+	background-color: #ff00ff
+}
+
 
 
