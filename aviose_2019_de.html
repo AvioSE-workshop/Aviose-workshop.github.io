@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AvioSE19 - 1st Workshop on Avionics Systems and Software Engineering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129279759-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-129279759-1');
+	</script>
+
+
+    <link href="assets/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/aviose.css" rel="stylesheet">
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+
+	<div class="container">
+
+
+		<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+		  <a class="navbar-brand" href="#">AvioSE19</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#registration">Konferenzanmeldung</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#call">Call for Paper</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#program">Programm</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#committee">Komitee</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#proceedings">Tagungsband</a>
+			  </li>
+			</ul>
+			<!--
+			<span class="navbar-text emphasized"><font color="red"><marquee width="35%" class="navbaralert">Verlängerte Einreichungsfrist bis 13. Januar!</marquee></font></span>
+			-->
+			<form class="form-inline my-2 my-lg-0">
+			  <a href="index.html" class="btn btn-primary my-2 my-sm-0" type="submit">DE</a>
+			  <a href="index_en.html" class="btn btn-outline my-2 my-sm-0" type="submit">EN</a>
+			</form>
+		  </div>
+		</nav>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide"  data-ride="carousel">
+	  <ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-01.png" alt="">
+            <div class="carousel-caption">
+              <h1>Willkommen bei AvioSE</h1>
+              <p>1st Workshop on Avionics Systems and Software Engineering</p>
+			  <p class="d-none d-md-block">19. Februar 2019 in Stuttgart</p>
+			  <p class="d-none d-md-block">Bestandteil der <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a> (18.-22. Februar 2019)</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-02.png" alt="">
+            <div class="carousel-caption">
+              <h1>Inhalte aus Wissenschaft und Industrie</h1>
+			  <p>1st Workshop on Avionics Systems and Software Engineering</p>
+			  <p class="d-none d-md-block">19. Februar 2019 in Stuttgart</p>
+			  <p class="d-none d-md-block">Bestandteil der <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a> (18.-22. Februar 2019)</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 carousel-img" src="assets/img/examples/new-03.png" alt="">
+            <div class="carousel-caption">
+              <h1>Peer-Review-Auswahlverfahren durch akademisches und industrielles Komitee</h1>
+              <p>1st Workshop on Avionics Systems and Software Engineering</p>
+			  <p class="d-none d-md-block">19. Februar 2019 in Stuttgart</p>
+			  <p class="d-none d-md-block">Bestandteil der <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a> (18.-22. Februar 2019)</p>
+            </div>
+        </div>
+      </div>
+       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Vor</span>
+	  </a>
+	  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Zur&uuml;ck</span>
+	  </a>
+    </div><!-- /.carousel -->
+
+      <!-- Die Inhalte ================================================== -->
+	<div class="section1">
+	<span class="glyphicon glyphicon-star"></span>
+		<a name="home"></a><h2><span class="glyphicon glyphicon-star"></span>AVIOSE19, 19. Februar 2019, Stuttgart</h2>
+		<p>
+		Die Software-Entwicklung in der Luft- und Raumfahrt ist durch zunehmende Komplexität, neue Anwendungsmöglichkeiten und gestiegene Zulassungsanforderungen gekennzeichnet. Zukünftige Anwendungen wie autonomer Lufttransport und Drohneneinsatz im kommerziellen Segment sowie die Weiterentwicklung bestehender Funktionalitäten erfordern neue Entwicklungsmethoden. Gleichzeitig existieren Fragestellungen z. B. in der Kommunikation und Navigation im Luftraum, der Technologie von Mehrkernprozessoren oder der künstlichen Intelligenz.
+		</p>
+
+		<!-- news -->
+
+		<h3>News</h3>
+
+		<table id="newss" class="table">
+			<tr>
+				<td class="newsdate"> 20.02.2019</td>
+				<td>
+					<h4 class="newshead">Mission erfüllt!</h4>
+					<p class="newsbody">
+						Die AvioSE19 ist vorbei. Wir möchten uns bei allen Autoren, Keynote-Sprechern, Komitee-Mitgliedern und Anwesenden bedanken, dass Sie zum Gelingen dieser Veranstaltung beigetragen haben. Wir würden uns freuen, den Workshop im nächsten Jahr zu wiederholen. Bitte verfolgen Sie <a target="_blank" href="https://aviose.github.io">aviose.github.io</a> für den aktuellen Stand. Untenstehend finden Sie die Ergebnisse der Pinnwand-Session der AvioSE19, welche zum Ziel hatte, die Gedanken der Anwesenden zum Thema Avionik und ihrer Herausforderungen zu sammeln. Ein visuelles Protokoll der Pinnwand-Session ist <a target="_blank" href="assets/img/pinboard/AvioSE19PinboardSessionVisualProtocol.pdf">hier</a> verfügbar.
+					</p>
+					<a href="assets/img/pinboard/pinboard1.jpg" data-lightbox="pinboard"><img class="example-image" src="assets/img/pinboard/thumbs/pinboard1.jpg" alt="Aviose19 pinboard session: Wishful thinking"></a>
+					<a href="assets/img/pinboard/pinboard2.jpg" data-lightbox="pinboard"><img class="example-image" src="assets/img/pinboard/thumbs/pinboard2.jpg" alt="Aviose19 pinboard session: Provocative theses 1"></a>
+					<a href="assets/img/pinboard/pinboard3.jpg" data-lightbox="pinboard"><img class="example-image" src="assets/img/pinboard/thumbs/pinboard3.jpg" alt="Aviose19 pinboard session: Provocative theses 1"></a>
+					<a href="assets/img/pinboard/pinboard4.jpg" data-lightbox="pinboard"><img class="example-image" src="assets/img/pinboard/thumbs/pinboard4.jpg" alt="Aviose19 pinboard session: Wishful thinking after voting"></a>
+					<a href="assets/img/pinboard/pinboard5.jpg" data-lightbox="pinboard"><img class="example-image" src="assets/img/pinboard/thumbs/pinboard5.jpg" alt="Aviose19 pinboard session: Provocative theses 1 after voting"></a>
+					<a href="assets/img/pinboard/pinboard6.jpg" data-lightbox="pinboard"><img class="example-image" src="assets/img/pinboard/thumbs/pinboard6.jpg" alt="Aviose19 pinboard session: Provocative theses 2 after voting"></a>
+					<a href="assets/img/pinboard/pinboard7.jpg" data-lightbox="pinboard"><img class="example-image" src="assets/img/pinboard/thumbs/pinboard7.jpg" alt="Aviose19 pinboard session: Most voted statements"></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="newsdate"> 04.02.2019</td>
+				<td>
+					<h4 class="newshead">Agenda</h4>
+					<p class="newsbody">
+						Das <a href="#program">Programm</a> für AVIOSE19 ist zusammengestellt. Wir freuen uns sechs paper, zwei Keynote-Sprecher, eine Podiumsdiskussion und ein Social-Event für den 19.02.2019 ankündigen zu können.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="newsdate"> 25.01.2019 </td>
+				<td>
+					<h4 class="newshead">Benachrichtigungen über Annahme versendet</h4>
+					<p class="newsbody">
+					Die Annahmebenachrichtigungen wurden versendet. Liebe Autoren bitte arbeiten Sie die Anmerkungen in Ihre Artikel bis zum 5.2. ein. Vergessen Sie nicht sich bis zum 31.1. zu registrieren (Ende des Frühbucherrabats). Bitte bestätigen Sie uns so schnell wie möglich Ihre Teilnahme.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="newsdate"> 15.01.2019 </td>
+				<td>
+					<h4 class="newshead">Konferenzanmeldung geöffnet</h4>
+					<p class="newsbody">
+					Ab sofort ist es möglich, sich <a target"_blank" href="#registration">hier</a> für die AVIOSE19 oder SE19 anzumelden.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="newsdate"> 17.12.2018 </td>
+				<td>
+					<h4 class="newshead">Bekanntmachung der Keynote-Sprecher</h4>
+					<p class="newsbody">
+					Der AVIOSE19-Workshop wird begleitet von zwei Keynote-Sprechern:
+						<ul>
+						<li><u>Prof. Dr.-Ing. Reinhard Reichel</u> von der Universität Stuttgart wird die Wichtigkeit von Software-Engineering für avionische Systeme aus der Perspektive der akademischen Welt beleuchten. Herr Reichel ist Gründer des Instituts für Luftfahrtsysteme und ehemaliger Projektleiter von Diehl Avionik Systeme. </li>
+						<li><u>Franz Münz</u> von Airbus Defence and Space wird Einblicke in das Vorgehen beim Software-Engineering bei Airbus geben und über die Erfahrungen damit berichten. Herr Münz ist eine geachteter Experte für Echtzeit-Avioniksysteme.</li>
+						</ul>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="newsdate"> 17.12.2018 </td>
+				<td>
+					<h4 class="newshead">Workshop-Sprache</h4>
+					<p class="newsbody">
+					Die Sprache auf dem Workshop wird English sein. Alle Keynotes und Diskussionen finden in Englisch statt. Alle Präsentationen sollten in English vorbereitet werden.
+					<p>
+				</td>
+			</tr>
+			<tr>
+				<td class="newsdate"> 17.12.2018 </td>
+				<td>
+					<h4 class="newshead">Einreichungsfrist verlängert</h4>
+					<p class="newsbody">
+					Aufgrund vieler Anfragen, haben wir uns entschlossen die Einreichungsfrist bis zum 13. Januar 2019 zu verlängern. Bereits eingereichte Beiträge können bis zu diesem Datum noch geändert werden.
+					</p>
+
+				</td>
+			</tr>
+
+		</table>
+
+
+
+		<h3>Wichtige Termine</h3>
+		<table id="dates" class="table table-striped table-bordered">
+			<tr>
+				<td>13.01.2019</td>
+				<td>Einreichungsfrist für Workshop-Beiträge</td>
+			</tr>
+			<tr>
+				<td>25.01.2019</td>
+				<td>Benachrichtigung über die Annahme der Workshop-Beiträge</td>
+			</tr>
+			<tr>
+				<td> <span class="emphasized">05.02.2019 </span></td>
+				<td> <span class="emphasized">Einreichungsfrist für finale Workshop-Beiträge </span></td>
+			</tr>
+			<tr>
+				<td>Ende Januar 2019</td>
+				<td>Konferenzanmeldung öffnet</td>
+			</tr>
+			<tr>
+				<td> <span class="emphasized">31.01.2019 </span></td>
+				<td> <span class="emphasized">Frühbucherrabat läuft aus </span></td>
+			</tr>
+			<tr>
+				<td> 19.02.2019 </td>
+				<td> AvioSE-Workshop</td>
+			</tr>
+		</table>
+
+		<a name="registration">
+		<h3>Konferenzanmeldung</h3>
+
+		<p>
+			Teilnehmer und Autoren müssen sich für die Teilnahme über die Seite der <a target="_blank" href="https://se19.uni-stuttgart.de/en/">SE19</a> registrieren. Bei einer ausschließlichen Teilnahme am Workshop wird eine vergünstigte Rate angeboten.
+		</p>
+		<div class="text-center">
+			<a target="_blank" href="https://tagung.informatik-forum.org/SE2019/register" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Anmelden!</a>
+		</div>
+		<p>
+		</p>
+		</div> <!-- section -->
+		<div class="section2">
+		<!-- Call -->
+		<a name="call"></a><h2>Call for Papers (<a target="_blank" href="AVIOSE2019-CfP-update.pdf">PDF</a>)</h2>
+		<p>
+            Das Ziel des Workshops ist die Darstellung von Methoden und Technologien der Avionik-Domäne. Die Themen im Interesse des Workshops sind im Einzelnen, aber nicht notwendigerweise darauf beschränkt: <br>
+        </p>
+
+		<div class="row">
+			<div class="col-sm">
+		<p class="font-weight-bold">
+            Entwicklungstechnologien:
+        </p>
+        <ul>
+            <li>Anforderungserhebung </li>
+            <li>Modellierungssprachen, -werkzeuge</li>
+            <li>Praxis-Transfer der Modellierungstechniken</li>
+            <li>Verifikation mittels Testen und/oder formaler Methoden</li>
+            <li>Security & Safety</li>
+        </ul>
+		</div>
+
+		<div class="col-sm">
+        <p class="font-weight-bold">
+            Entwicklungsmethoden:
+        </p>
+        <ul>
+            <li>Zertifizierungen</li>
+            <li>Agile Entwicklung</li>
+            <li>Interaktion mit anderen Domänen (Physik, Psychologie, etc.)</li>
+        </ul>
+		</div>
+
+		<div class="col-sm">
+        <p class="font-weight-bold">
+            Produkttechnologien:
+        </p>
+        <ul>
+            <li>Anwendungen künstlicher Intelligenz (bis zur Verifikation)</li>
+            <li>Autonome Systeme</li>
+        </ul>
+
+		</div>
+
+		<div class="col-sm">
+        <p class="font-weight-bold">
+            Sonstige Herausforderungen:
+        </p>
+        <ul>
+            <li>Referenzarchitekturen für Hard- und Software sowie Schnittstellen zwischen Subsystemen</li>
+            <li>Sensoren und Sensorfusion</li>
+            <li>Integrated Modular Avionics (IMA)</li>
+            <li>Obsoleszenz</li>
+        </ul>
+		</div>
+		</div>
+
+
+
+        <h3>Art der Einreichung</h3>
+
+        <p>
+            Beim AvioSE werden zwei Arten von Beiträgen akzeptiert: <br>
+        </p>
+
+        <ul>
+            <li><u>Full Paper</u>:  Der Beitrag ist auf bis zu 8 Seiten dargestellt und stellt Forschungsergebnisse vollständig dar. </li>
+            <li><u>Short Paper</u>: Der Beitrag ist auf bis zu 4 Seiten dargestellt und stellt begonnene Projekte dar. </li>
+        </ul>
+
+		<p>Die Beiträge werden im gemeinsamen Tagungsband der SE-Konferenz in <a href="http://ceur-ws.org/">COER-WS</a> veröffentlicht.</p>
+
+		<p class="danger">!!!Es ist zwingend, dass mindestens ein Autor die Inhalte des angenommenen Beitrags im Workshop vorstellt!!! </p>
+
+		<h3>Vortragender werden?</h3>
+    <p>
+		Bitte nutzen Sie die zweispaltige <a href="https://www.ieee.org/conferences/publishing/templates.html"> IEEE Formatvorlage </a>. Der Abstract Ihres Papers muss in der Länge unter 200 Wörter sein.
+	</p>
+	<div class="text-center">
+		<a target="_blank" href="https://www.ieee.org/conferences/publishing/templates.html" class="btn btn-primary btn-lg btn-success" role="button" aria-pressed="true">Vorlage herunterladen!</a>
+	</div>
+
+	<p>
+		Die Beiträge sind über  <a href="https://easychair.org/conferences/?conf=aviose2019"> EasyChair </a>einzureichen. Wenn Sie dort über keinen Account verfügen, müssen Sie einen anlegen.
+	</p>
+	<div class="text-center">
+		<a target="_blank" href="https://easychair.org/conferences/?conf=aviose2019" class="btn btn-secondary btn-lg disabled" role="button" aria-pressed="true">Paper einreichen!</a>
+	</div>
+
+	<p>
+		Für die Veröffentlichung der angenommenen Beiträge benötigen die Organisatoren des Workshops die Copyright- Rechte.
+		Dafür muss mindestens ein Autor des angenommenen Beitrages die Rechte dem Organisationskomitees gewähren.
+		Füllen Sie bitte das vorbereitete Formular aus und senden Sie es an die im Formular genannte Email- Adresse.
+		Sie haben zwei Download- Möglichkeiten: Im <a href="http://aviose2019.github.io/Copyright-Transfer-Formular.docx"> docx- Format </a> haben wir bereits die richtigen Workshopdaten ausgefüllt.
+		Falls docx- Format bei Ihnen nicht funktionieren sollte, können Sie auch als <a href="http://ceur-ws.org/Non-Ex-Publication-Permission-Template.txt"> text- Format </a> herunterladen.
+	</p>
+
+	<h3>Auswahlverfahren</h3>
+
+        <p>
+            Bei der Auswahl der Einreichungen werden diese nach den folgenden wissenschaftlichen Kriterien bewertet:
+        </p>
+
+        <ul>
+            <li>Sinnvoller Aufbau (Problemstellung und andere Ansätze, Lösungsvorschlag, Evaluierung der Lösung)</li>
+            <li>Herausarbeitung eines Alleinstellungsmerkmals im Gegensatz zu existierenden Lösungen</li>
+            <li>Intersubjektiv nachvollziehbare Darstellung</li>
+            <li>Relevanz des Beitrags</li>
+            <li>Tragfähigkeit der Lösung</li>
+            <li>Innovation des Beitrags</li>
+            <li>Angemessene Zitation relevanter Literatur aus dem wissenschaftlichen Bereich</li>
+            <li>Form (Sprache, Orthographie, Grammatik sowie Formatierung)</li>
+        </ul>
+
+
+		</div> <!-- section -->
+		<div class="section1">
+		<!-- Program -->
+		<a name="program"></a><h2>Programm</h2>
+
+      <p>
+        Der Workshop ist als ganztägige Veranstaltung angesetzt. Die Sprache auf dem Workshop ist Englisch.
+            </p>
+
+      <table id="dates" class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th scope="col">FROM</th>
+				<th scope="col">TO</th>
+				<th scope="col">DUR</th>
+				<th scope="col">SLOT</th>
+				<th scope="col">LOCATION</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>08:30</td>
+				<td>-</td>
+				<td>-</td>
+				<td>Registration</td>
+				<td>Entrance*</td>
+			</tr>
+			<tr class="agendaofficial">
+				<td>09:00</td>
+				<td>09:10</td>
+				<td>00:10</td>
+				<td>Opening</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendakeynote">
+				<td>09:10</td>
+				<td>09:35</td>
+				<td>00:25</td>
+				<td>Keynote 1: (The importance of appropriate systems and software engineering for avionics systems from the academic perspective) - Reinhard Reichel,University of Stuttgart</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendatalk">
+				<td>09:35</td>
+				<td>10:00</td>
+				<td>00:25</td>
+				<td>Paper 1: Towards Computer-Aided Software Requirements Process - Marina Reich, Airbus Defence and Space GmbH</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendatalk">
+				<td>10:00</td>
+				<td>10:25</td>
+				<td>00:25</td>
+				<td>Paper 2: Tool Chain for Avionics Design, Development, Integration and Test - Martin Halle, Hamburg University of Technology</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendabreak">
+				<td>10:25</td>
+				<td>10:55</td>
+				<td>00:30</td>
+				<td>Coffee</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendakeynote">
+				<td>10:55</td>
+				<td>11:20</td>
+				<td>00:25</td>
+				<td>Keynote 2: (Insights and experience of industrial avionics systems and software engineering from the Airbus perspective) - Franz Münz, Airbus Defence and Space GmbH</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendatalk">
+				<td>11:20</td>
+				<td>11:45</td>
+				<td>00:25</td>
+				<td>Paper 3: Test Sequence Generation From Formally Verified SysML Models - Pierre de Saqui-Sannes, ISAE-SUPAERO</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendatalk">
+				<td>11:45</td>
+				<td>12:10</td>
+				<td>00:25</td>
+				<td>Paper 4: MODCAP: A Platform for Cooperative Search and Rescue Missions - Mariana Avezum, Technical University of Munich</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendatalk">
+				<td>12:10</td>
+				<td>12:35</td>
+				<td>00:25</td>
+				<td>Paper 5: Using Runtime Monitoring to Enhance Offline Analysis - Sebastian Schirmer, DLR</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendabreak">
+				<td>12:35</td>
+				<td>13:50</td>
+				<td>01:15</td>
+				<td>Lunch</td>
+				<td>Mensa of the University, Pfaffenwaldring 45</td>
+			</tr>
+			<tr class="agendaworkshop">
+				<td>13:50</td>
+				<td>14:05</td>
+				<td>00:15</td>
+				<td>Pinboard time</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendatalk">
+				<td>14:05</td>
+				<td>14:30</td>
+				<td>00:25</td>
+				<td>Paper 6: Model-Based Engineering for Avionics: Will Specification and Formal Verification e.g. based on Broy’s Streams become feasible? - Deni Raco, RWTH Aachen University</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendaworkshop">
+				<td>14:30</td>
+				<td>15:00</td>
+				<td>00:30</td>
+				<td>Pinboard discussion</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendabreak">
+				<td>15:00</td>
+				<td>15:30</td>
+				<td>00:30</td>
+				<td>Coffee</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendaworkshop">
+				<td>15:30</td>
+				<td>16:00</td>
+				<td>00:30</td>
+				<td>Panel discussion - Experts: Dr. Winfried Lohmiller (Airbus Defence and Space GmbH), Dr. Martin Momberg (Airbus Defence and Space GmbH, DO-178C contributer), Prof. Reinhard Reichel (University of Stuttgart), Katja Stecklina (Philotech Systementwicklung und Software GmbH)</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr class="agendaofficial">
+				<td>16:00</td>
+				<td>16:10</td>
+				<td>00:10</td>
+				<td>Conclusion</td>
+				<td>R. 0.457*</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="agendasocial">
+				<td>18:00</td>
+				<td></td>
+				<td></td>
+				<td>Dinner: Social and technical exchange with the people from the AvioSE workshop(optional and self-payed)</td>
+				<td>Brauhaus Böblingen, Lange Strasse 20, 71032 Böblingen (<a target="_blank" href="https://goo.gl/maps/hy4PzaaaJiN2">Anfahrt</a>)</td>
+			</tr>
+			</tbody>
+        </table>
+		<p><i> * Computer Science Building, Universitätsstraße 38, R. 0.457 </i></p>
+
+		</div> <!-- section -->
+		<div class="section2">
+		<!-- Comittee -->
+		<a name="committee"></a><h2>Komitee</h2>
+
+		<p>
+            Für Anliegen und Fragen bezüglich des Workshops kontaktieren Sie bitte Marina Reich unter der Email: <a href="#">marinr[AT]hrz.tu-chemnitz.de</a>.
+        </p>
+
+		<h3>Organizationsteam</h3>
+        <p>
+            Jun.- Prof. Björn Annighöfer, Universität Stuttgart <br>
+            Dr. Andreas Schweiger, Airbus Defence and Space GmbH <br>
+            Marina Reich, Airbus Defence and Space GmbH, Technische Universität Chemitz
+        </p>
+
+
+        <h3>Programmkomitee</h3>
+        <p>
+            Jun.- Prof. Björn Annighöfer, Universität Stuttgart <br>
+            Sven Bacher, Philothech Systementwicklung und Software GmbH <br>
+            Ulrich Fräbel, Rolls Royce Group <br>
+            Prof. Dr. Ralf God, Technische Universität Hamburg  <br>
+            Prof. Dr. Lars Grunske, Humboldt- Universität zu Berlin <br>
+	    Prof. Dr. Eric Knauss, University of Gothenburg <br>
+	    Jürgen Krug, Diehl Aerospace GmbH <br>
+	    Alfred Lief, Airbus Defence and Space GmbH <br>
+	    Dr. Winfried Lohmiller, Airbus Defence and Space GmbH <br>
+            Prof. Dr. Alexander Pretschner, Technische Universität München <br>
+            Dr. Stephan Rudolph, Northrop Grumman LITEF GmbH <br>
+            Dr. Harald Ruess, fortiss GmbH <br>
+	    Prof. Dr. Bernhard Rumpe, RWTH Aachen University <br>
+            Dr. Andreas Schweiger, Airbus Defence and Space GmbH <br>
+	    Prof. Dr. Matthias Tichy, Universität Ulm <br>
+            Prof. Dr. André Windisch, Airbus Defence and Space GmbH, Technische Universität Chemnitz
+        </p>
+
+
+
+	</div> <!-- section -->
+
+	<div class="section1">
+		<!-- Proceedings -->
+		<a name="proceedings"></a><h2>Tagungsband</h2>
+
+		<p>
+            Alle angenommenen Beiträge sind veröffentlicht mit <a target="_blank" href="http://ceur-ws.org/">CEUR-WS</a> und frei zugänglich. Zugang zum Tagungsband der AvioSE19 erhalten Sie über den untenstehenden Link.
+        </p>
+		<div class="text-center">
+			<a target="_blank" href="http://ceur-ws.org/Vol-2308/" class="btn btn-primary btn-lg" role="button" aria-pressed="true">AvioSE19 Proceedings</a>
+		</div>
+
+
+
+	</div> <!-- section -->
+
+
+
+        <!-- Footer
+    ================================================== -->
+
+	<div class="footer">
+		<p>Designed and built with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+		<p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.</p>
+		<p>AvioSE is co-located with SE 2019. Visit SE 2019 <a target="_blank" href="https://se19.uni-stuttgart.de/en/">here</a>.</p>
+		<p> <a href="#">Back to top</a></p>
+	</div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap4/js/bootstrap.min.js"></script>
+	<script src="assets/lightbox/js/lightbox.js"></script>
+
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>
