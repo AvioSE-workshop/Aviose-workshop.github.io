@@ -1,0 +1,128 @@
+body {
+	background-color: lightsteelblue1;
+	margin: auto;
+	padding-bottom: 40px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #5a5a5a;
+}
+
+h2 {
+	color: darkslateblue;
+	font-size: 2em;
+	font-weight: bold;
+	padding-top: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+	padding-top: 1em;
+	font-weight: bold;
+}
+
+div.section1 {
+	color: #000000;
+	border-bottom: 0.1em solid darkslateblue;
+	padding: 0.5em;
+}
+
+div.section2 {
+	background-color: #B0E2FF;
+	color: #222222;
+	border-bottom: 0.1em solid darkslateblue;
+	padding: 0.5em;
+}
+
+div.footer {
+	background-color: #402727;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 0.5em;
+}
+
+div.footer p {
+	text-align:center;
+	padding: 0.0em;
+	margin: 0.1em;
+}
+
+.carousel-caption {
+	margin: 0;
+	line-height: 1.25;
+	color:darkslateblue;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+p a {
+	color: darkred;
+	text-decoration: underline;
+}
+
+p.danger {
+	font-weight: bold;
+	color: red;
+}
+
+img.carousel-img {
+	height:25em;
+}
+
+marqee.navbaralert {
+	font-weight: bold;
+	color: red;
+	width: 10em;
+}
+
+span.changed {
+	text-decoration: line-through;
+}
+
+span.emphasized {
+	font-weight: bold;
+	color: red;
+}
+
+h4.newshead {
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+}
+
+td.newsdate {
+	color: black;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+p.newsbody {
+	color: black;
+	font-size: 16px;
+}
+
+tr.agendaofficial td {
+	background-color: #00ff00
+}
+
+tr.agendakeynote td {
+	background-color: #cccccc
+}
+
+tr.agendatalk td {
+	background-color: #00ffff
+}
+
+tr.agendaworkshop td {
+	background-color: #ffcc00
+}
+
+tr.agendabreak td {
+	background-color: #ffff00
+}
+
+tr.agendasocial td {
+	background-color: #ff88ff
+}
+
+
+
