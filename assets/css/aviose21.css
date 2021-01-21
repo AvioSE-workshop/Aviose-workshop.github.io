@@ -104,28 +104,33 @@ p.newsbody {
 	font-size: 16px;
 }
 
+table.agenda {
+	background-color: #000000;
+}
+
 tr.agendaofficial td {
-	background-color: #00ff00
+	color: #00ff00;
 }
 
 tr.agendakeynote td {
-	background-color: #cccccc
+	color: #ff8888;
 }
 
 tr.agendatalk td {
-	background-color: #00ffff
+	color: #00ffff;
 }
 
 tr.agendaworkshop td {
-	background-color: #ffcc00
+	color: #ffcc00;
 }
 
 tr.agendabreak td {
-	background-color: #ffff00
+	color: #aaaaaa;
+	font-style: italic;
 }
 
 tr.agendasocial td {
-	background-color: #ff88ff
+	color: #ff88ff;
 }
 
 
