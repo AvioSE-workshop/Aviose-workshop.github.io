@@ -1,0 +1,137 @@
+body {
+	background-color: oldlace;
+	margin: auto;
+	padding-bottom: 40px;
+	font-family: monospace;
+	font-size: 16px;
+	color: white;
+}
+
+h2 {
+	color: cyan;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h3 {
+	color: cyan;
+	font-size: 1.5em;
+	padding-top: 1em;
+	font-weight: bold;
+}
+
+div.section1 {
+	background-color: teal;
+	color: white;
+	padding: 1em;
+	border: 1px solid white;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+div.section2 {
+	background-color: tan;
+	color: white;
+	padding: 1em;
+	border: 1px solid white;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+div.footer {
+	background-color: #402727;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 0.5em;
+}
+
+div.footer p {
+	text-align:center;
+	padding: 0.0em;
+	margin: 0.1em;
+}
+
+.carousel-caption {
+	margin: 0;
+	line-height: 1.25;
+	color:white;
+	text-shadow: 0 2px 2px rgba(0,0,0,1);
+	font-weight: bold;
+
+}
+
+a {
+	color: orange;
+	text-decoration: underline;
+}
+
+p.danger {
+	font-weight: bold;
+	color: red;
+}
+
+img.carousel-img {
+	height:25em;
+}
+
+marqee.navbaralert {
+	font-weight: bold;
+	color: red;
+	width: 10em;
+}
+
+span.changed {
+	text-decoration: line-through;
+}
+
+span.emphasized {
+	font-weight: bold;
+	color: red;
+}
+
+h4.newshead {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+}
+
+td.newsdate {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+p.newsbody {
+	font-size: 16px;
+}
+
+table.agenda {
+	background-color: #000000;
+}
+
+tr.agendaofficial td {
+	color: #00ff00;
+}
+
+tr.agendakeynote td {
+	color: #ff8888;
+}
+
+tr.agendatalk td {
+	color: #00ffff;
+}
+
+tr.agendaworkshop td {
+	color: #ffcc00;
+}
+
+tr.agendabreak td {
+	color: #aaaaaa;
+	font-style: italic;
+}
+
+tr.agendasocial td {
+	color: #ff88ff;
+}
+
+
+
