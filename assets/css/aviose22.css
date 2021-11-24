@@ -88,6 +88,10 @@ span.emphasized {
 	color: red;
 }
 
+span.hl {
+	background-color: orange;
+}
+
 h4.newshead {
 	font-weight: bold;
 	font-style: italic;
