@@ -137,5 +137,14 @@ tr.agendasocial td {
 	color: #ff88ff;
 }
 
+.supporters img {
+	height: 200px;
+}
+
+/*Boostrapt carousel fix*/
+.carousel img {
+	object-fit: cover;
+  }
+
 
 
