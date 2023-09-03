@@ -89,7 +89,7 @@ span.emphasized {
 }
 
 span.hl {
-	background-color: blueviolet;
+	color: red;
 }
 
 h4.newshead {
@@ -137,8 +137,13 @@ tr.agendasocial td {
 	color: #ff88ff;
 }
 
+.supporters .row div{
+	height: 8em
+}
+
 .supporters img {
-	height: 200px;
+	max-height: 40%;
+ 	max-width: auto;
 }
 
 /*Boostrapt carousel fix*/
