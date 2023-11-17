@@ -113,28 +113,28 @@ table.agenda {
 }
 
 tr.agendaofficial td {
-	color: #00ff00;
+	color: #008800;
 }
 
 tr.agendakeynote td {
-	color: #ff8888;
+	color: #884444;
 }
 
 tr.agendatalk td {
-	color: #00ffff;
+	color: #008888;
 }
 
 tr.agendaworkshop td {
-	color: #ffcc00;
+	color: #884400;
 }
 
 tr.agendabreak td {
-	color: #aaaaaa;
+	color: #444444;
 	font-style: italic;
 }
 
 tr.agendasocial td {
-	color: #ff88ff;
+	color: #884488;
 }
 
 .supporters .row div{
