@@ -1,0 +1,155 @@
+body {
+	background-color: #adadad;
+	margin: auto;
+	padding-bottom: 40px;
+	font-family: monospace;
+	font-size: 16px;
+	color: #333333;
+}
+
+h2 {
+	color: blue;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h3 {
+	color: #000000;
+	font-size: 1.5em;
+	padding-top: 1em;
+	font-weight: bold;
+}
+
+div.section1 {
+	background-color: #ffffff;
+	/* color: white; */
+	padding: 1em;
+	border: 1px solid white;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+div.section2 {
+	background-color: #dddddd;
+	/* color: white; */
+	padding: 1em;
+	border: 1px solid white;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+div.footer {
+	/* background-color: #1a164d; */
+	/* color: #ffffff; */
+	padding: 0.5em;
+}
+
+div.footer p {
+	text-align:center;
+	padding: 0.0em;
+	margin: 0.1em;
+}
+
+.carousel-caption {
+	margin: 0;
+	line-height: 1.25;
+	color:white;
+	text-shadow: 0 2px 2px #000000;
+	font-weight: bold;
+
+}
+
+a {
+	color: blueviolet;
+	text-decoration: underline;
+}
+
+p.danger {
+	font-weight: bold;
+	color: red;
+}
+
+img.carousel-img {
+	height:25em;
+}
+
+marqee.navbaralert {
+	font-weight: bold;
+	color: red;
+	width: 10em;
+}
+
+span.changed {
+	text-decoration: line-through;
+}
+
+span.emphasized {
+	font-weight: bold;
+	color: red;
+}
+
+span.hl {
+	color: red;
+}
+
+h4.newshead {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+}
+
+td.newsdate {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+p.newsbody {
+	font-size: 16px;
+}
+
+table.agenda {
+	/*background-color: #000000;*/
+}
+
+tr.agendaofficial td {
+	color: #008800;
+}
+
+tr.agendakeynote td {
+	color: #884444;
+}
+
+tr.agendatalk td {
+	color: #008888;
+}
+
+tr.agendaworkshop td {
+	color: #884400;
+}
+
+tr.agendabreak td {
+	color: #444444;
+	font-style: italic;
+}
+
+tr.agendasocial td {
+	color: #884488;
+}
+
+.supporters .row div{
+	height: 8em
+}
+
+.supporters img {
+	max-height: 40%;
+ 	max-width: auto;
+}
+
+/*Boostrapt carousel fix*/
+.carousel img {
+	object-fit: cover;
+  }
+
+
+
