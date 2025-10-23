@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AvioSE25 - 7th Workshop on Avionics Systems and Software Engineering </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129279759-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-129279759-1');
+	</script>
+
+    <link href="assets/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/aviose25.css" rel="stylesheet">
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/img/icons/aviose_icon_32.ico">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+
+	<div class="container">
+	
+	
+		<nav class="navbar navbar-expand-lg">
+		  <a class="navbar-brand" href="#"><img src="assets/img/icons/aviose_icon_32.png" /></a>
+		  <a class="navbar-brand" href="#">AvioSE'25</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#registration">Registration</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#call">Call for Paper</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#program">Program</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#committee">Committee</a>
+			  </li>	
+			  <li class="nav-item">
+				<a class="nav-link" href="#proceedings">Proceedings</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#supporters">Supporters</a>
+			  </li>
+              <li class="nav-item">
+				<a class="nav-link" href="#pasteditions">Past Editions</a>
+			  </li>
+			</ul>
+			<!-- 
+			<span class="navbar-text emphasized"><font color="red"><marquee width="35%" class="navbaralert">Paper submission deadline extended until Jan 13th!</marquee></font></span>
+			-->
+			<!-- <form class="form-inline my-2 my-lg-0">
+			  <a href="index.html" class="btn btn-outline my-2 my-sm-0" type="submit">DE</a>
+			  <a href="index_en.html" class="btn btn-primary my-2 my-sm-0" type="submit">EN</a>
+			</form> -->
+		  </div>
+		</nav>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide"  data-ride="carousel">
+	  <ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 carousel-img" src="assets/img/aviose24_carousel/carousel1.jpg" alt="">
+            <div class="carousel-caption">
+              <h1>7th Workshop on Avionics Systems and Software Engineering</h1>
+			  <p class="d-none d-md-block">February 25, 2025, Karlsruhe, Germany </p>
+			  <p class="d-none d-md-block">Co-located with the <a target="_blank" href="https://se2025.sdq.kastel.kit.edu/">se2025</a> (February 24 - 28, 2024)</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 carousel-img" src="assets/img/aviose24_carousel/carousel2.jpg" alt="">
+            <div class="carousel-caption">
+              <h1>Scientific and industrial state of the art contributions</h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 carousel-img" src="assets/img/aviose24_carousel/carousel3.jpg" alt="">
+            <div class="carousel-caption">
+              <h1>Peer-review by an academic and industrial committee</h1>
+            </div>
+        </div>
+      </div>
+       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+    </div><!-- /.carousel -->
+
+      <!-- Die Inhalte ================================================== -->
+	<div class="section1">
+	<span class="glyphicon glyphicon-star"></span>
+		<a name="home"></a><h2><span class="glyphicon glyphicon-star"></span>AvioSE'25, February, 25, 2025, Karlsruhe, Germany</h2>
+		<p>
+			Software development in the aerospace domain is driven by demanding fault tolerance, increasing complexity, new application potentials, rising certification effort, and increasing cost pressure. 
+			New software development methodologies are required for future applications such as e.g. Advanced Air Mobility (AAM), aircrew (workload) reduction, and further enhancement of existing functionality. 
+			At the same time, there are challenges in communication and navigation in airspace, certification for multi-core processors, artificial intelligence (AI) as well as security of software, hardware, and connectivity. 			
+		</p>
+	
+		<!-- news -->
+		
+		<h3>News</h3>
+
+		<table id="news" class="table table-striped">
+			<!-- <tr>
+				<td width=15% class="newsdate"> 2023-02-21 </td>
+				<td>
+					<h4 class="newshead">Mission accomplished</h4>
+					<p class="newsbody">
+                        The AvioSE'23 was successfully conducted in Paderborn. 
+						Many thanks to all contributors, i.e. authors, keynotes, panelists and the audience!
+						We enjoyed the event very much. 
+						We are looking forward to see you again at AvioSE'25.
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width=15% class="newsdate"> 2023-02-09 </td>
+				<td>
+					<h4 class="newshead">Nicolas Paoli joined the panel</h4>
+					<p class="newsbody">
+                        We are happy to announce that Nicolas Paoli from the Airbus Cloud Acceleration Team will join our panel discussion as an additional panelist. Welcome Nicolas!
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width=15% class="newsdate"> 2023-02-06 </td>
+				<td>
+					<h4 class="newshead">Social event</h4>
+					<p class="newsbody">
+                        Joins us for dinner after the AvioSE'23. For details see the <a href="#program">program</a>.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width=15% class="newsdate"> 2023-02-03 </td>
+				<td>
+					<h4 class="newshead">Agenda update</h4>
+					<p class="newsbody">
+                        We are happy to announce that Ursula Hoffmann from Diehl and Michael Hanke from DETECON joint the panel discussion. Moreover, the agenda for the afternoon was shifted by 30 min.
+					</p>
+				</td>
+			</tr>
+		
+			<tr>
+				<td width=15% class="newsdate"> 2024-02-20 </td>
+				<td>
+					<h4 class="newshead">Proceedings released</h4>
+					<p class="newsbody">
+						The proceedings for the AvioSE'25 are available <a href="#proceedings">here</a>.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width=15% class="newsdate"> 2024-02-16 </td>
+				<td>
+					<h4 class="newshead">Panel announced</h4>
+					<p class="newsbody">
+						We are happy to welcome Steven VanderLeest, Stefan Brunthaler and Stephane Poulain as our panelists in the panel discussion on "Avionics Cyber-Security".
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width=15% class="newsdate"> 2023-12-1 </td>
+				<td>
+					<h4 class="newshead">Registration open</h4>
+					<p class="newsbody">
+                        Participation requires a registration for at least the workshops of SE-2024. 
+						The <a href="#registration">registration</a> is now open. 
+						Early bird rates are available until Jan 10th.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width=15% class="newsdate"> 2023-12-01 </td>
+				<td>
+					<h4 class="newshead">Preliminary program compiled</h4>
+					<p class="newsbody">
+                        Please find the preliminary program of the AvioSE'23 <a href="#program">here</a>. 
+						Return later for updates.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td width=15% class="newsdate"> 2023-11-17 </td>
+				<td>
+					<h4 class="newshead">Author notifications sent</h4>
+					<p class="newsbody">
+                        All contributors where informed via email about the acceptance or not acceptance of their paper.  
+						Final papers have to be prepared by Dec 15 (extended).
+					</p>
+				</td>
+			</tr>
+			-->
+			<tr>
+				<td width=15% class="newsdate"> 2025-02-06 </td>
+				<td>
+					<h4 class="newshead">Keynote Speakers</h4>
+					<p class="newsbody">
+                        We are pleased to have two esteemed industry fellows as our keynote speakers: 
+					<li>Florian Gilcher, Managing Director, <span class="emphasized">Ferrous Systems</span>.</li> 
+					<li>Antonio Monzon Diaz, Senior Expert in Military Certification of New Technologies, <span class="emphasized">Airbus Defence and Space</span>.</li> 			
+					</p>
+				</td>
+			</tr>
+			
+	              <tr>
+				<td width=15% class="newsdate"> 2025-02-06 </td>
+				<td>
+					<h4 class="newshead">Pannelists</h4>
+					<p class="newsbody">
+                        The panelist for the Certification Considerations for Future Avionics Systems are  
+						<li>Prof. Dr. Zamira Daw, Deputy Director, <span class="emphasized">Institute of Aircraft Systems, University of Stuttgart</span>.</li>
+						<li>Eduard Harwardt, System Engineer in Project- & Configuration Management & System Engineering at Diehl Aerospace, <span class="emphasized">Diehl Aerospace</span>.</li> 
+					        <li>Burak Ata, Head of Certification and Assurance <span class="emphasized"> Helsing</span>.</li> 
+						<li>Stephan Thesing, CEO <span class="emphasized">itDepands.Aero</span>.</li> 
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width=15% class="newsdate"> 2025-02-06 </td>
+				<td>
+					<h4 class="newshead"><span class="emphasized">The Panel Session</span> == hot topic 2025</h4>
+					<p class="newsbody">
+                        Certification considerations for avionics systems is one of the main pillar of our domain.
+						Although there is a vast amount of experience that has been collected through decades of successfull practice, certification is still the pain point.
+						The development of hardware and software technologies continiously challenging our established practices.  
+						Novel methods, amongst others Artificial Intelligence are pushing the boundries.
+						Emerging markets, particularly Innovative Air Mobility require acceleration. 
+						<span class="emphasized">Certification Considerations for Future Avionics Systems</span> will be title of the panel discussion.
+						We are looking forward to your inputs.  
+					</p>
+				</td>
+			</tr>
+		
+			  <tr> 
+				<td width=15% class="newsdate"> 2024-10-28 </td>
+				<td>
+					<h4 class="newshead">AvioSE'25 Deadline Extension</h4>
+					<p class="newsbody">
+                        The paper submission deadline for the AvioSE'25 workshop is extend to Nov 11, 2024. We are looking forward to receiving your submissions.
+					</p>
+				</td>
+			</tr>
+
+			
+			  <tr> 
+				<td width=15% class="newsdate"> 2024-09-16 </td>
+				<td>
+					<h4 class="newshead">AvioSE'25 CfP online</h4>
+					<p class="newsbody">
+                        The CfP for the AvioSE'25 workshop is now online. We are looking forward to receiving your submissions.
+					</p>
+				</td>
+			</tr>
+			
+                        <tr> 
+				<td width=15% class="newsdate"> 2024-09-05 </td>
+				<td>
+					<h4 class="newshead">AvioSE'25 accepted</h4>
+					<p class="newsbody">
+                        AvioSE'25 was accepted as a workshop co-located with the SE'25.  
+						We are looking forward to your contribution and participation!
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width=15% class="newsdate"> 2024-07-10 </td>
+				<td>
+					<h4 class="newshead">AvioSE'25 announced </h4>
+					<p class="newsbody">
+                        We would like to inform you that we are planning AvioSE'25 in Karlsruhe. 
+						So far, the announcement and date are preliminary. 
+						We inform you, when our plans are confirmed.
+					</p>
+				</td>
+			</tr>
+		</table>
+
+
+		
+		<h3>Important dates</h3>
+		<p class="danger">!!! Deadline Extension!!!</p>
+		
+	        <table id="dates" class="table table-striped table-bordered">
+			<tr>
+				<td> <s>No 11, 2024</s> </td>
+				<td> Paper submission deadline </td>
+			</tr>
+			<tr>
+				<td> <s>Nov 28, 2024</s> Dec 5, 2024 </td>
+				<td> Paper acceptance notification</td>
+			</tr>
+            <tr>
+				<td> <s>Dec 09, 2024</s> Dec 16, 2024 </td>
+				<td> Camera-ready paper deadline</td>
+			</tr>
+			<!-- <tr>
+				<td> Jan 10, 2023 </td>
+				<td> Early bird registration ends</td>
+			</tr>
+			<tr>
+				<td> Feb 16, 2024 </td>
+				<td> Presentation slides deadline</td>
+			</tr> -->
+			<tr>
+				<td> Feb 25, 2025 </td>
+				<td> Day of the workshop</td>
+			</tr>
+			
+			<!-- <p> To be announced soon </p>-->
+		</table> 
+		
+		<a name="registration"></a>
+		<h3>Registration</h3>
+		
+		<p>
+			Participation as an author or listener requires a registration at the hosting conference <a target="_blank" href="https://se2025.sdq.kastel.kit.edu/">SE25</a>.
+		</p> 
+		<div class="text-center">		
+			<!--  <a target="_blank" href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-pressed="true">Registration opens at the end of the year</a> -->
+			<a target="_blank" href="https://se2025.sdq.kastel.kit.edu/registrierung/" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Register!</a> 
+		</div>
+		<p>
+
+		</p>
+
+
+		</div> <!-- section -->
+		<div class="section2">
+		<!-- Call -->
+		<a name="call"></a>
+		<h2>Call for Papers (
+			<a target="_blank" href="AVIOSE2025-CfP.pdf">PDF</a>
+			)
+		</h2>
+		<p>
+            The objective of the workshop is the presentation of methods and technologies of the avionics domain. Topics of interest, but not limited to these, are: </br>
+        </p>
+		
+
+		<p class="font-weight-bold">
+            Development technologies (e.g. model-based systems and software engineering):
+        </p>
+        <ul>
+            <li>Requirements engineering</li>
+            <li>Modelling languages and tools</li>
+            <li>Model-based systems and software engineering (MBSE)</li>
+            <li>Transfer of modelling techniques to industrial application and their scalability</li>
+            <li>Cyber-Security and Safety</li>
+            <li>Algorithm-based sizing, layout, design, and automation of development and certification artifacts</li>
+        </ul>
+		
+        <p class="font-weight-bold">
+            Development methods (e.g. deployment of AI):
+        </p>
+        <ul>
+            <li>Avionics-specific languages, compilers, checkers or tools</li>
+            <li>Agile development vs. certification</li>
+            <li>Interaction with other domains (e.g., electrical engineering, physics, psychology)</li>
+            <li>Deployment of artificial intelligence for enhancing development processes</li>
+            <li>Automated and/or digital engineering workflows</li>
+        </ul>
+
+		<p class="font-weight-bold">
+            Quality assurance methods (e.g. model-based tests, formal methods):
+        </p>
+        <ul>
+            <li>Model-based tests as well as safety and security assessment</li>
+            <li>Verification via testing and formal methods and their scalability</li>
+            <li>Qualification simplification methods</li>
+            <li>Alternative certification strategies</li>
+        </ul>
+
+		
+        <p class="font-weight-bold">
+            Product technologies (e.g. applications of AI):
+        </p>
+        <ul>
+            <li>Applications of AI (including verification, certification, and explainability)</li>
+            <li>Autonomous Systems (e.g., UAS, Remotely Piloted Aircraft System (RPAS))</li>
+            <li>Reference architectures for hard- and software and interfaces between sub-systems</li>
+            <li>Sensors, sensor fusion and sensor management</li>
+            <li>Integrated Modular Avionics (IMA) and other avionics platforms</li>
+            <li>Human-Machine-Interface (HMI)</li>
+            <li>Safty-critical middleware and operating systems</li>
+        </ul>
+
+            <p class="font-weight-bold">
+            Vision papers
+        </p>
+        <ul>
+            <li>Short vision papers on upcoming challenges, technologies or regulations</li>
+        </ul>
+
+
+
+      
+        <h3>Type of submission and conditions</h3>
+
+        <p>
+            We welcome two kinds of contributions: </br>
+        </p>
+
+        <ul>
+            <li><u>Full Paper</u>:  The paper does not exceed 20 pages and states completed research. </li>
+            <li><u>Short Paper</u>: The paper does not exceed 10 pages and states ongoing research. </li>
+        </ul>
+		
+		<p>All accepted contributions will be published within the SE-workshop proceedings. </p>
+		<!-- <p>All accepted contributions will be published within the SE-workshop proceedings and be available in <a href="https://dl.gi.de/">dl.gi.de</a>. </p> -->
+
+		<p class="danger">
+			!!! Accepted contributions must be presented by one of the authors in person. 
+			One author must be registered for the workshop or 
+			full SE before the final manuscript deadline!!! 
+		</p>
+		
+		<h3>How to Contribute?</h3>
+		<p>
+			The papers must follow <a target="_blank" href="https://github.com/gi-ev/LNI/"> LNI formatting</a> guidelines.
+		</p>
+		<div class="text-center">
+			<a target="_blank" href="https://www.ctan.org/pkg/lni" class="btn btn-primary btn-lg btn-success" role="button" aria-pressed="true">Get the template!</a>
+		</div>
+		
+		<p>
+			The papers are to be submitted using <a href="https://easychair.org/conferences/?conf=aviose25">EasyChair</a>. 
+			If you do not have an EasyChair account, you need to create a new one. 
+			The text of the abstract should not exceed 200 words.
+		</p>  
+		<div class="text-center">
+			<a target="_blank" href="https://easychair.org/conferences/?conf=aviose25" class="btn btn-primary btn-lg btn-success" role="button" aria-pressed="true">Submit a paper!</a>
+		</div>
+
+            <!-- Button disable in class: btn btn-secondary btn-lg disabled -->
+			<!-- For the publication of accepted papers the organization committee requires to have the copyright for the papers.
+			For this, at least one of the authors needs to transfer the necessary rights to the organization committee.
+			Please use one of the prepared templates for this:
+			<a href="http://aviose2019.github.io/Copyright-Transfer-Formular.docx"> docx- format </a> is already
+			filled with workshop und organization committee details. If the docx- Format is not possible for you, you can also use
+			the <a href="http://ceur-ws.org/Non-Ex-Publication-Permission-Template.txt"> text- Format </a>. -->
+	
+	<h3>Assessment and Selection of Submissions</h3>
+
+        <p>
+            The requested submissions lie in the field of expertise of the Organisation and Program Committee. They are assessed according to the following scientific criteria:
+        </p>
+
+        <ul>
+            <li>Reasonable structure (problem statement and related work, solution, evaluation of the presented approach)</li>
+            <li>Presentation of the unique feature of the submission w. r. t. existing solutions</li>
+            <li>Intersubjectively comprehensible compilation</li>
+            <li>Relevance of the presented approach</li>
+            <li>Innovation of the submission</li>
+            <li>Sustainability of the solution</li>
+            <li>Appropriate citation of relevant scientific publications</li>
+            <li>Form (language, spelling, grammar and formatting)</li>
+        </ul>
+		
+		
+		</div> <!-- section -->
+		<div class="section1">
+		<!-- Program -->
+		<a name="program"></a><h2>Program</h2>
+		
+      <p>
+        The workshop is an all-day event. It is a mini-conference giving space to the authors of the accepted papers to present their work. Moreover, invited experts give insights on important avionics topics in keynote presentations. Last, a panel session with experts is organized for exchanging experiences and fostering the network. 
+	The workshop language is English.
+
+		
+		
+		
+	The preliminary program can be found below. 
+       </p>
+
+	  
+      <table id="dates" class="table table-striped table-bordered agenda">
+		<thead>
+			<tr>
+				<th scope="col">FROM*</th>
+				<th scope="col">TO</th>
+				<th scope="col">DUR</th>
+				<th scope="col">SLOT</th>
+				<th scope="col">LOCATION</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="agendaofficial">
+				<td>09:00</td>
+				<td>09:30</td>
+				<td>00:30</td>
+				<td>Opening </td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+			<tr class="agendakeynote">
+				<td>09:30</td>
+				<td>10:00</td>
+				<td>00:30</td>
+				<td><b>Keynote 1:</b>
+					 Correctness at large, Correctness in motion - 
+					Florian Gilcher 
+					(Ferrous Systems GmbH, Germany)
+				</td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+
+			
+			<tr class="agendatalk">
+				<td>10:00</td>
+				<td>10:30</td>
+				<td>00:30</td>
+				<td><b>Paper 1:</b>
+				       Viability of Rust for Avionic Software Development - Current status and way forward - 
+					Jan Sommer, Tamara Gutierrez Rojo, Hany Ibrahim Erfan Abdelmaksoud, Andreas Lund and Daniel Lüdtke 
+					(German Aerospace Center (DLR), Germany)
+				</td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+			
+			<tr class="agendabreak">
+				<td>10:30</td>
+				<td>11:00</td>
+				<td>00:30</td>
+				<td>Coffee break</td>
+				<td>**</td>
+			</tr>
+			
+			<tr class="agendatalk">
+				<td>11:00</td>
+				<td>11:30</td>
+				<td>00:30</td>
+				<td><b>Paper 2:</b>
+					Reconfigurable Computing Hypervisors: State-of-the-Art and Ways Ahead - 
+					Vincent Janson, Phillip Nöldeke, Samuel Kleine and Umut Durak. 
+					(German Aerospace Center (DLR), Germany) 
+				</td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+			<tr class="agendatalk">
+				<td>11:30</td>
+				<td>12:00</td>
+				<td>00:30</td>
+				<td><b>Paper 3:</b>  
+					Arguing machine learning assurance for certification - 
+					Henry Späth, Michael Holloway, Tihomir Varchev, Stephan Staudacher and Zamira Daw 
+					(Technical University of Stuttgart, Germany & NASA, Langley Research Center, Virginia)
+				</td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+
+			<tr class="agendakeynote">
+				<td>12:00</td>
+				<td>12:30</td>
+				<td>00:30</td>
+				<td><b>Keynote 2:</b>  
+					Military Avionics Certification and Qualification  - 
+					Antonio Monzon-Diaz 
+					(Airbus Defence and Space, Germany)
+				</td>
+				 <td>Building 40.50, Room 005 im EG</td>
+			</tr>
+			
+			<tr class="agendabreak">
+				<td>12:30</td>
+				<td>14:00</td>
+				<td>01:30</td>
+				<td>Lunch break</td>
+				<td>***</td>
+			</tr>
+
+			<tr class="agendatalk">
+				<td>14:00</td>
+				<td>14:30</td>
+				<td>00:30</td>
+				<td><b>Paper 4:</b>  
+					Integration of GPU RTL IP into System-level Simulation through TLM: A Case Study with Vortex RISC-V GPU in the METASAT Platform Digital Twin - 
+					Lorenzo Lazzara, Giulia Stazi, Valerio Di Valerio, Stefano Sinisi, Alessandro Ulisse, Marc Solé Bonet, Janis Wolf and Leonidas Kosmidis 
+					(Collins Aerospace - Applied Research and Technology, Italy & Barcelona Super Computing Center, Spain)
+				</td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+			<tr class="agendaworkshop">
+				<td>14:30</td>
+				<td>15:30</td>
+				<td>01:00</td>
+				<td><b>Panel discussion on "Software Certification and Qualification Considerations for Future Avionics Systems":</b> 
+					(Part 1: Questions from the Moderators) with 
+					Prof. Dr. Zamira Daw (University of Stuttgart),
+					Eduard Harwardt (Diehl Aerospace),
+					Burak Ata (Helsing),
+					Stephan Thesing (itDepands.Aero).
+					</p>
+				</td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+			<tr class="agendabreak">
+				<td>15:30</td>
+				<td>16:00</td>
+				<td>00:30</td>
+				<td>Coffee break</td>
+				<td>***</td>
+			</tr>
+			<tr class="agendaworkshop">
+				<td>16:00</td>
+				<td>17:00</td>
+				<td>01:00</td>
+				<td><b>Panel discussion on "Software Certification and Qualification Considerations for Future Avionics Systems":</b> 
+					(Part 2: Questions from the Audiance) with 
+					Prof. Dr. Zamira Daw (University of Stuttgart),
+					Eduard Harwardt (Diehl Aerospace),
+					Burak Ata (Helsing),
+					Stephan Thesing (itDepands.Aero).
+					</p>
+				</td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+			<tr class="agendaofficial">
+				<td>17:00</td>
+				<td>17:30</td>
+				<td>00:30</td>
+				<td>Closing </td>
+				<td>Building 40.50, Room 005 im EG</td>
+			</tr>
+			<!--
+			<tr class="agendasocial">
+				<td>19:00</td>
+				<td></td>
+				<td></td>
+				<td>
+					Dinner: Social and technical exchange with the people from the AvioSE workshop (optional and self-payed). 
+				</td>
+				<td>
+					****
+				</td>		
+			</tr>
+			-->
+			</tbody>
+        </table>
+		<!--
+		<p>
+		<i> * All times are given in Central European Time (CET), e.g. Berlin </i></br>
+		<i> **/*** Room: Festsaal A (Uni Center @ main campus  Johannes Kepler Universität Linz statt, Altenberger Straße 69, 4040 Linz, Österreich) </i></br>
+		<i> **** <a target="_blank" href="https://maps.app.goo.gl/UAjiurjU5eugNxaWATBD">Grüne Papaya, Altenberger Str. 70, 4040 Linz, Österreich</a></i> 
+		
+		</p>
+		-->
+
+		</div> <!-- section -->
+		<div class="section2">
+		<!-- Comittee -->
+		<a name="committee"></a><h2>Committee</h2>
+		
+		<p>
+            To contact the organizers, send an email to Andreas Schweiger: <a href="#">andreas.schweiger[at]airbus.com</a>.
+        </p>
+		
+		<h3>Workshop chairs</h3>
+        <p>	
+            Dr. Andreas Schweiger, Airbus Defence and Space GmbH </br>
+	    Prof. Umut Durak, German Aerospace Center (DLR)  </br>	
+	    Marina Reich, Airbus Defence and Space GmbH, Technische Universität Chemitz </br>
+            Prof. Björn Annighöfer, Universität Stuttgart
+        </p>
+     
+
+        <h3>Program committee</h3>
+        <p>
+            <!-- Prof. María Angeles Martín Prats, Universidad de Sevilla, Spain </br> -->
+            Dr. Andreas Schweiger, Airbus Defence and Space GmbH </br>
+            apl. Prof. Dr.-Ing. Umut Durak, DLR Braunschweig </br>
+	    Prof. Björn Annighöfer, Universität Stuttgart </br>
+ 	    Marina Reich, Airbus Defence and Space GmbH, Technische Universität Chemitz </br>
+	    Prof. Dr. Peter Stütz, Universität der Bundeswehr München </br>
+            <!-- Prof. Dr.-Ing. Dr. h. c. Jürgen Becker, Karlsruher Institut für Technologie (KIT) </br> -->
+            <!-- Prof. Dr.-Ing.  Steffen Becker, Universität Stuttgart </br> -->
+            <!-- Prof. Dr. Stefan Brunthaler, Universität der Bundeswehr München </br> -->
+            <!-- Rolf Buese, Diehl Aerospace GmbH, Überlingen </br> -->
+            <!-- FH-Prof. Dipl.-Ing. Dr. Holger Flühr, FH Johanneum Graz </br> -->
+            Prof. Dr. Ralf God, Technische Universität Hamburg  </br>
+            <!-- Prof.  Dr.  Lars Grunske, Humboldt-Universität zu Berlin </br> -->
+	    Dr.-Ing. Martin Halle, Hamburg University of Technology </br>
+            <!-- Dr. Christian Heinzemann, Robert Bosch GmbH </br> -->
+            <!-- Prof. Dr. Wolfgang Hommel, Universität der Bundeswehr München </br> -->
+	    <!-- Thanakorn Khamvilai (T.K.), Ph.D., Assistant Research Professor, The Pennsylvania State University</br> -->
+            <!-- Prof. Dr. Eric Knauss, University of Gothenburg </br> -->
+            Dr. Winfried Lohmiller, Airbus Defence and Space GmbH </br>
+            Dr. Christian Meißner, Volkswagen AG </br>
+	    Stéphane Poulain, Airbus Operations GmbH </br>
+            <!-- Prof. Dr. Alexander Pretschner, Technische Universität München </br> -->
+            <!-- Dr. Stephan Rudolph, Northrop Grumman LITEF GmbH </br> -->
+	    Deni Raco, RWTH Aachen University </br>
+            Prof. Dr. Bernhard Rumpe, RWTH Aachen University </br>
+            <!-- Katja Stecklina, Philotech Systementwicklung und Software GmbH </br> -->
+            <!-- Dr. Steven H. VanderLeest, The Boeing Company</br> -->
+            Prof. Dr. Sebastian Voss, FH Aachen </br>
+	    <!--(to be announced later)-->
+        </p>
+
+	</div> <!-- section -->
+	
+
+
+	<div class="section1 supporters">
+		<!-- Proceedings -->
+		<a name="supporters"></a><h2>Supporters</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<a href="https://se2025.sdq.kastel.kit.edu/" target="_blank">
+						<img src="https://se2025.sdq.kastel.kit.edu/assets/img/logo.jpg"/><br/>
+						Software Engineering Conference
+					</a>
+				</div>
+				<div class="col-sm">
+					<a href="https://www.dglr.de/vernetzen/fachbereiche/querschnittsthemen/q3-avionik-und-missionstechnologien/q32-avionik-und-sensorik/" target="_blank">
+						<img src="assets/img/icons/dglr_logo.png" alt="Deutsche Gesellschaft für Luft- und Raumfahrt - Lilienthal-Oberth e.V. Q3.2 Avionik und Sensorik "/><br/>
+						DGLR Fachgruppe Q3.2 Avionik-Platformen,-Hardware und -Systeme
+					</a>
+				</div>
+				<div class="col-sm">
+					<a href="https://ceas.org/index.php/ceas-publications-ceas-aeronautical-journal/" target="_blank">
+						<img src="assets/img/icons/CEAS_logo.gif" alt="CEAS Aeronautical Journal"/><br/>
+						The CEAS Aeronautical Journal
+					</a>
+				</div>
+			</div>
+		</div>
+	</div> <!-- section -->
+
+			<div class="section2">
+		<!-- Proceedings -->
+		<a name="proceedings"></a><h2>Proceedings</h2>
+		
+		<p>
+			<!--Will follow after the workshop.-->
+
+            <!--All accepted contributions will be published with <a target="_blank" href="https://dl.gi.de/">dl.gi.de</a> and are freely accessible.-->
+			
+			Please find the proceedings below.
+
+			<div class="text-center">
+				<a target="_blank" href="https://dl.gi.de/collections/2c639f0b-2339-4749-8964-ea5e7f49ef83" class="btn btn-primary btn-lg btn-success" role="button" aria-pressed="true">SE 2025 - Companion Proceedings</a>
+				<!--<a target="_blank" href="https://dl.gi.de/items/d0a6e514-213c-4132-8e56-8a27f57c89c1" class="btn btn-primary btn-lg btn-success" role="button" aria-pressed="true">Single PDF file</a>-->
+			</div> 
+        </p>
+
+	</div> <!-- section -->
+		
+
+    <div class="section1">
+		<!-- Past Editions -->
+		<a name="pasteditions"></a><h2>Past Editions</h2>
+
+        <table id="dates" class="table table-striped table-bordered">
+			<tr>
+				<td> <a target="_blank" href="2024.html">AvioSE'24</a> </td>
+				<td> Co-located with <a target="_blank" href="https://se2024.se.jku.at/">SE</a> Linz, Austria </td>
+			</tr>
+			<tr>
+				<td> <a target="_blank" href="2023.html">AvioSE'23</a> </td>
+				<td> Co-located with <a target="_blank" href="https://se-2023.gi.de/">SE</a> Paderborn, Germany </td>
+			</tr>
+			<tr>
+				<td> <a target="_blank" href="2022.html">AvioSE'22</a> </td>
+				<td> Co-located with <a target="_blank" href="https://www.se-2022.de/">SE</a> virtual </td>
+			</tr>
+            <tr>
+				<td> <a target="_blank" href="2021.html">AvioSE'21</a> </td>
+				<td> Co-located with <a target="_blank" href="https://se-2021.tu-bs.de/">SE</a> virtual </td>
+			</tr>
+			<tr>
+				<td> <a target="_blank" href="2020.html">AvioSE'20</a> </td>
+				<td> Co-located with <a target="_blank" href="https://se20.ocg.at/">SE</a> in Innsbruck, Austria </td>
+			</tr>
+			<tr>
+				<td> <a target="_blank" href="2019.html">AvioSE'19</a> </td>
+				<td> Co-located with <a target="_blank" href="https://se20.ocg.at/">SE</a> in Stuttgart, Germany </td>
+			</tr>
+		</table>
+
+	</div> <!-- section -->
+
+
+        <!-- Footer
+    ================================================== -->
+
+	<div class="footer">
+		<p>Designed and built with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+		<p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.</p>
+		<p>AvioSE'25 is co-located with SE'25. Visit SE'25 <a target="_blank" href="https://se2025.sdq.kastel.kit.edu/">here</a>.</p>
+		<p> <a href="#">Back to top</a></p>
+	</div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap4/js/bootstrap.min.js"></script>
+	<script src="assets/lightbox/js/lightbox.js"></script>
+   
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>
+
+	
+	<!-- Suche nach dem Zertifikatsfehler. -->
